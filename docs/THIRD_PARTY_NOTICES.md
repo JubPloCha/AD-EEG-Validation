@@ -15,13 +15,28 @@ exception below. PCA, cPCA, logistic regression, Haufe patterns and the EEG
 feature formulas are established methods; the project does not claim to have
 invented them.
 
-## cPCA provenance exception
+## cPCA method and implementation
 
-The function `src/cpca_ad_nc/modeling.py::cpca_fit` implements a target-minus-
-background covariance eigendecomposition. It is annotated with the cPCA method
-citation, but its source-code derivation cannot be established from the public
+The contrastive principal component analysis (cPCA) method follows Abid et al.
+(2018). The authors' [contrastive repository](https://github.com/abidlabs/contrastive)
+is acknowledged as the reference implementation.
+
+In this project, `cpca_fit` in `src/cpca_ad_nc/modeling.py` computes directions
+from the target-minus-background covariance objective using a QR-based subspace
+eigendecomposition. The function is integrated into the project's training,
+cross-validation and frozen external-validation workflow. This description
+documents the numerical implementation and method attribution; it does not
+establish source-code derivation or licensing.
+
+**Reference:** Abid A, Zhang MJ, Bagaria VK, Zou J. Exploring patterns enriched
+in a dataset with contrastive principal component analysis. *Nature Communications*.
+2018;9:2134. [doi:10.1038/s41467-018-04608-8](https://doi.org/10.1038/s41467-018-04608-8).
+
+### Source-code licensing and evidence
+
+The source-code derivation of `cpca_fit` cannot be established from the public
 release history or the private project history available for this audit. The
-function is therefore excluded from Peichen Jiang's MIT grant until provenance
+function remains excluded from Peichen Jiang's MIT grant until provenance
 and rights evidence identifies whether it is an independent implementation or
 a permitted adaptation. This is a provenance reservation, not a claim that
 the function infringes copyright.

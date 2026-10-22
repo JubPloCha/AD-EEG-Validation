@@ -57,10 +57,18 @@ The study's own clinical and EEG data are access-controlled and are not download
 
 Sixteen scalp electrodes support electrode-level and coarse scalp-region patterns, not cortical networks or source localization. Weights, Haufe associations, permutation dependence and patient metric increases/decreases have different meanings. Pooled AD+NC MMSE correlation can reflect diagnostic separation; it is not proof of cognitive severity differences within AD. AD-only analyses and planned covariate adjustment must be inspected separately. All synthetic runs verify software paths only; paper-number reproduction needs the corresponding restricted inputs, exact splits, configurations and environment.
 
+## cPCA method and implementation
+
+The contrastive principal component analysis (cPCA) method follows Abid et al. (2018). The authors' [contrastive repository](https://github.com/abidlabs/contrastive) is acknowledged as the reference implementation.
+
+In this project, `cpca_fit` in `src/cpca_ad_nc/modeling.py` computes directions from the target-minus-background covariance objective using a QR-based subspace eigendecomposition. The function is integrated into the project's training, cross-validation and frozen external-validation workflow. Algorithm attribution and source-code licensing are documented separately in [THIRD_PARTY_NOTICES](docs/THIRD_PARTY_NOTICES.md#cpca-method-and-implementation).
+
+**Reference:** Abid A, Zhang MJ, Bagaria VK, Zou J. Exploring patterns enriched in a dataset with contrastive principal component analysis. *Nature Communications*. 2018;9:2134. [doi:10.1038/s41467-018-04608-8](https://doi.org/10.1038/s41467-018-04608-8).
+
 ## License and attribution
 
 Original code and documentation that Peichen Jiang has the right to license are released under the standard [MIT License](LICENSE), **Copyright (c) 2026 Peichen Jiang**. This covers the project's original workflow, adapters, tests, examples and documentation; it does not claim authorship of PCA, cPCA, logistic regression, Haufe patterns or other established methods.
 
-**Specific exception:** the derivation history of `src/cpca_ad_nc/modeling.py::cpca_fit` remains unverified, so that function is excluded from this MIT grant pending provenance/rights evidence. The upstream cPCA repository has both a verified historical standard-MIT revision and a later MIT–NSFG revision; the historical revision actually referenced by this project is unknown. The retained [MIT–NSFG license](docs/contrastive_LICENSE.md) is unchanged and is not standard MIT. See [third-party notices](docs/THIRD_PARTY_NOTICES.md) for exact file/function scope, commit evidence and the unresolved gap. The repository is therefore not represented as unconditionally MIT-only.
+The `cpca_fit` source-provenance exception to this grant, the upstream license history and the unchanged [MIT–NSFG license copy](docs/contrastive_LICENSE.md) are documented in [THIRD_PARTY_NOTICES](docs/THIRD_PARTY_NOTICES.md#source-code-licensing-and-evidence). Method attribution does not establish a source-code license; this repository is not represented as unconditionally MIT-only.
 
 External dependencies and third-party materials retain their own copyrights and licenses. This software license grants no rights to private EEG, clinical records, external datasets or fitted study models; their access and license terms remain separate.

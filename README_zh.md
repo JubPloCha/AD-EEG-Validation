@@ -46,10 +46,18 @@ py -3.12 -m venv .venv
 
 本次已实际完成安装/导入、帮助信息、8 项测试、完整 schema 演示、合成数据六阶段运行；350 个已有外层模型与 7 个外部预测分支的私有对照通过，AUC 差为 0。没有为整理仓库重跑全部 EEG 或全部论文嵌套验证。详细方法、输入格式、参数和核验边界见 [复现说明](docs/reproducibility.md)。
 
+## cPCA 方法与实现
+
+本项目采用 Abid 等人（2018）提出的对比主成分分析（cPCA）方法，并将作者的官方仓库 [abidlabs/contrastive](https://github.com/abidlabs/contrastive) 列为参考实现。
+
+本项目的 `cpca_fit` 函数位于 `src/cpca_ad_nc/modeling.py`，通过基于 QR 的子空间特征分解，求解目标组协方差减去 α 倍背景组协方差所对应的投影方向，并接入本项目的训练、交叉验证与冻结外部验证流程。方法引用和源码许可分别记录，具体说明见 [THIRD_PARTY_NOTICES](docs/THIRD_PARTY_NOTICES.md#cpca-method-and-implementation)。
+
+参考文献：Abid A, Zhang MJ, Bagaria VK, Zou J. Exploring patterns enriched in a dataset with contrastive principal component analysis. *Nature Communications*. 2018;9:2134. [doi:10.1038/s41467-018-04608-8](https://doi.org/10.1038/s41467-018-04608-8)。
+
 ## 许可与归属
 
 Peichen Jiang 有权许可的原创代码和文档采用标准 [MIT License](LICENSE)，版权署名为 **Copyright (c) 2026 Peichen Jiang**，覆盖本项目原创的流程组织、接口、测试、示例和文档。使用 PCA、cPCA、逻辑回归、Haufe 变换等既有方法不代表本项目提出了这些算法。
 
-**具体例外：**`src/cpca_ad_nc/modeling.py::cpca_fit` 的源码衍生关系尚无法核实，因此该函数暂不纳入本次 MIT 授权，需补足来源或权利证据。已核实 cPCA 上游历史存在标准 MIT 版本，之后变更为 MIT–NSFG；但无法确定本项目实际参考的历史版本。保留的 [MIT–NSFG 许可副本](docs/contrastive_LICENSE.md) 未作修改，不能当成标准 MIT。具体函数范围、提交证据和缺口见 [THIRD_PARTY_NOTICES](docs/THIRD_PARTY_NOTICES.md)，本仓库不作无例外的“全部仅 MIT”声明。
+`cpca_fit` 因来源尚未核实而暂不纳入本次 MIT 授权的具体范围、上游许可历史及未修改的 [MIT–NSFG 许可副本](docs/contrastive_LICENSE.md)，统一见 [THIRD_PARTY_NOTICES](docs/THIRD_PARTY_NOTICES.md#source-code-licensing-and-evidence)。方法引用不能代替源码许可证据，本仓库不作无例外的“全部仅 MIT”声明。
 
 依赖及第三方材料保留各自版权和许可。本软件许可不授权使用或再分发私有 EEG、临床资料、外部数据集或研究模型，其访问和许可条件单独适用。
