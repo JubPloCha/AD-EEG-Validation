@@ -1,11 +1,13 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "cpca-ad-nc"
 version = "0.1.0"
 description = "Reproducible AD-NC EEG feature modelling with frozen PCA and cPCA"
+# No SPDX expression is asserted: cpca_fit provenance is reserved; see notices.
+license-files = ["LICENSE", "docs/THIRD_PARTY_NOTICES.md", "docs/contrastive_LICENSE.md"]
 requires-python = ">=3.11"
 dependencies = [
   "numpy>=2.0,<3",

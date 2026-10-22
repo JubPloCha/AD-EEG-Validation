@@ -145,6 +145,11 @@ def _demo_transform(A: np.ndarray, tr):
     return (A - tr["center"]) / tr["scale"]
 
 
+# Method: Abid et al. (2018), doi:10.1038/s41467-018-04608-8.
+# Reference source: abidlabs/contrastive; the revision actually consulted and
+# any source-code derivation remain unverified. This function is excluded from
+# Peichen Jiang's MIT grant pending provenance/rights evidence. See
+# docs/THIRD_PARTY_NOTICES.md for historical MIT / MIT-NSFG evidence and scope.
 def cpca_fit(Z_target: np.ndarray, Z_background: np.ndarray, alpha: float):
     """Fit target covariance minus alpha times background covariance."""
     T = np.asarray(Z_target, float); B = np.asarray(Z_background, float)
