@@ -1,0 +1,8 @@
+LICENSE DRAFT — ownership confirmation required before publication
+
+The newly authored orchestration, tests and documentation are intended for
+release under the MIT License once the copyright holder(s) have been supplied
+and confirmed. This draft does not relicense third-party code or datasets.
+Third-party libraries, EEGLAB and referenced implementations retain their own
+licenses. Private EEG, clinical records, mappings and fitted study models are
+excluded. See docs/THIRD_PARTY_NOTICES.md.

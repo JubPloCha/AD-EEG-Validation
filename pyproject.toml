@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cpca-ad-nc"
+version = "0.1.0"
+description = "Reproducible AD-NC EEG feature modelling with frozen PCA and cPCA"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.0,<3",
+  "scipy>=1.12,<2",
+  "pandas>=2.2,<4",
+  "h5py>=3.10,<4",
+  "scikit-learn>=1.4,<2",
+  "statsmodels>=0.14,<1",
+  "threadpoolctl>=3.2,<4",
+]
+
+[project.scripts]
+cpca-ad-nc = "cpca_ad_nc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cpca_ad_nc = ["assets/*.json"]

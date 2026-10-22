@@ -1,0 +1,32 @@
+# Copy to config.local.toml (ignored). All relative paths resolve beside this file.
+[paths]
+workspace = '../private_run'
+development_subjects = '../data/private/development_subjects.csv'
+development_features = '../data/private/development_features.csv'
+external_subjects = '../data/private/external_subjects.csv'
+external_features = '../data/private/external_features.csv'
+# Optional: supplied study identities are preserved exactly. Empty = generate.
+outer_splits = ''
+matched_pairs = ''
+# Optional frozen_bundle path; default is workspace/private/frozen.
+
+[features]
+unit_token = 'EEGLAB_microvolt'
+confirmed_rest_reference = false
+reference_evidence = ''
+
+[model]
+random_seed = 20261018
+inner_splits = 3
+outer_splits = 5
+outer_repeats = 5
+alpha_grid = [0.0, 0.1, 0.3, 1.0, 3.0, 10.0, 30.0, 100.0]
+dim_grid = [1, 2, 3, 5, 10, 20]
+c_grid = [0.01, 0.1, 1.0, 10.0]
+robust_clip = false
+
+[external]
+dataset_id = 'external'
+
+[analysis]
+mmse = false

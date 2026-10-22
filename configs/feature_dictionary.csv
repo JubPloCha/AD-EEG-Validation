@@ -1,0 +1,753 @@
+feature_name,feature_type,band,channel_1,channel_2,roi_1,roi_2,roi_pair,edge_key,unit,node_or_edge
+power_log10_delta_FP1,absolute_power,delta,FP1,,left_frontal,,,,log10(microvolt^2),node
+relative_log10_delta_FP1,relative_power,delta,FP1,,left_frontal,,,,log10(fraction),node
+power_log10_delta_FP2,absolute_power,delta,FP2,,right_frontal,,,,log10(microvolt^2),node
+relative_log10_delta_FP2,relative_power,delta,FP2,,right_frontal,,,,log10(fraction),node
+power_log10_delta_F3,absolute_power,delta,F3,,left_frontal,,,,log10(microvolt^2),node
+relative_log10_delta_F3,relative_power,delta,F3,,left_frontal,,,,log10(fraction),node
+power_log10_delta_F4,absolute_power,delta,F4,,right_frontal,,,,log10(microvolt^2),node
+relative_log10_delta_F4,relative_power,delta,F4,,right_frontal,,,,log10(fraction),node
+power_log10_delta_C3,absolute_power,delta,C3,,central,,,,log10(microvolt^2),node
+relative_log10_delta_C3,relative_power,delta,C3,,central,,,,log10(fraction),node
+power_log10_delta_C4,absolute_power,delta,C4,,central,,,,log10(microvolt^2),node
+relative_log10_delta_C4,relative_power,delta,C4,,central,,,,log10(fraction),node
+power_log10_delta_P3,absolute_power,delta,P3,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_delta_P3,relative_power,delta,P3,,parietal_posterior,,,,log10(fraction),node
+power_log10_delta_P4,absolute_power,delta,P4,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_delta_P4,relative_power,delta,P4,,parietal_posterior,,,,log10(fraction),node
+power_log10_delta_O1,absolute_power,delta,O1,,occipital,,,,log10(microvolt^2),node
+relative_log10_delta_O1,relative_power,delta,O1,,occipital,,,,log10(fraction),node
+power_log10_delta_O2,absolute_power,delta,O2,,occipital,,,,log10(microvolt^2),node
+relative_log10_delta_O2,relative_power,delta,O2,,occipital,,,,log10(fraction),node
+power_log10_delta_F7,absolute_power,delta,F7,,left_frontal,,,,log10(microvolt^2),node
+relative_log10_delta_F7,relative_power,delta,F7,,left_frontal,,,,log10(fraction),node
+power_log10_delta_F8,absolute_power,delta,F8,,right_frontal,,,,log10(microvolt^2),node
+relative_log10_delta_F8,relative_power,delta,F8,,right_frontal,,,,log10(fraction),node
+power_log10_delta_T7,absolute_power,delta,T7,,left_temporal,,,,log10(microvolt^2),node
+relative_log10_delta_T7,relative_power,delta,T7,,left_temporal,,,,log10(fraction),node
+power_log10_delta_T8,absolute_power,delta,T8,,right_temporal,,,,log10(microvolt^2),node
+relative_log10_delta_T8,relative_power,delta,T8,,right_temporal,,,,log10(fraction),node
+power_log10_delta_P7,absolute_power,delta,P7,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_delta_P7,relative_power,delta,P7,,parietal_posterior,,,,log10(fraction),node
+power_log10_delta_P8,absolute_power,delta,P8,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_delta_P8,relative_power,delta,P8,,parietal_posterior,,,,log10(fraction),node
+spectral_entropy_delta_FP1,spectral_entropy,delta,FP1,,left_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_FP2,spectral_entropy,delta,FP2,,right_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_F3,spectral_entropy,delta,F3,,left_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_F4,spectral_entropy,delta,F4,,right_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_C3,spectral_entropy,delta,C3,,central,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_C4,spectral_entropy,delta,C4,,central,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_P3,spectral_entropy,delta,P3,,parietal_posterior,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_P4,spectral_entropy,delta,P4,,parietal_posterior,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_O1,spectral_entropy,delta,O1,,occipital,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_O2,spectral_entropy,delta,O2,,occipital,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_F7,spectral_entropy,delta,F7,,left_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_F8,spectral_entropy,delta,F8,,right_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_T7,spectral_entropy,delta,T7,,left_temporal,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_T8,spectral_entropy,delta,T8,,right_temporal,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_P7,spectral_entropy,delta,P7,,parietal_posterior,,,,dimensionless normalized entropy,node
+spectral_entropy_delta_P8,spectral_entropy,delta,P8,,parietal_posterior,,,,dimensionless normalized entropy,node
+power_log10_theta_FP1,absolute_power,theta,FP1,,left_frontal,,,,log10(microvolt^2),node
+relative_log10_theta_FP1,relative_power,theta,FP1,,left_frontal,,,,log10(fraction),node
+power_log10_theta_FP2,absolute_power,theta,FP2,,right_frontal,,,,log10(microvolt^2),node
+relative_log10_theta_FP2,relative_power,theta,FP2,,right_frontal,,,,log10(fraction),node
+power_log10_theta_F3,absolute_power,theta,F3,,left_frontal,,,,log10(microvolt^2),node
+relative_log10_theta_F3,relative_power,theta,F3,,left_frontal,,,,log10(fraction),node
+power_log10_theta_F4,absolute_power,theta,F4,,right_frontal,,,,log10(microvolt^2),node
+relative_log10_theta_F4,relative_power,theta,F4,,right_frontal,,,,log10(fraction),node
+power_log10_theta_C3,absolute_power,theta,C3,,central,,,,log10(microvolt^2),node
+relative_log10_theta_C3,relative_power,theta,C3,,central,,,,log10(fraction),node
+power_log10_theta_C4,absolute_power,theta,C4,,central,,,,log10(microvolt^2),node
+relative_log10_theta_C4,relative_power,theta,C4,,central,,,,log10(fraction),node
+power_log10_theta_P3,absolute_power,theta,P3,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_theta_P3,relative_power,theta,P3,,parietal_posterior,,,,log10(fraction),node
+power_log10_theta_P4,absolute_power,theta,P4,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_theta_P4,relative_power,theta,P4,,parietal_posterior,,,,log10(fraction),node
+power_log10_theta_O1,absolute_power,theta,O1,,occipital,,,,log10(microvolt^2),node
+relative_log10_theta_O1,relative_power,theta,O1,,occipital,,,,log10(fraction),node
+power_log10_theta_O2,absolute_power,theta,O2,,occipital,,,,log10(microvolt^2),node
+relative_log10_theta_O2,relative_power,theta,O2,,occipital,,,,log10(fraction),node
+power_log10_theta_F7,absolute_power,theta,F7,,left_frontal,,,,log10(microvolt^2),node
+relative_log10_theta_F7,relative_power,theta,F7,,left_frontal,,,,log10(fraction),node
+power_log10_theta_F8,absolute_power,theta,F8,,right_frontal,,,,log10(microvolt^2),node
+relative_log10_theta_F8,relative_power,theta,F8,,right_frontal,,,,log10(fraction),node
+power_log10_theta_T7,absolute_power,theta,T7,,left_temporal,,,,log10(microvolt^2),node
+relative_log10_theta_T7,relative_power,theta,T7,,left_temporal,,,,log10(fraction),node
+power_log10_theta_T8,absolute_power,theta,T8,,right_temporal,,,,log10(microvolt^2),node
+relative_log10_theta_T8,relative_power,theta,T8,,right_temporal,,,,log10(fraction),node
+power_log10_theta_P7,absolute_power,theta,P7,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_theta_P7,relative_power,theta,P7,,parietal_posterior,,,,log10(fraction),node
+power_log10_theta_P8,absolute_power,theta,P8,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_theta_P8,relative_power,theta,P8,,parietal_posterior,,,,log10(fraction),node
+spectral_entropy_theta_FP1,spectral_entropy,theta,FP1,,left_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_FP2,spectral_entropy,theta,FP2,,right_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_F3,spectral_entropy,theta,F3,,left_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_F4,spectral_entropy,theta,F4,,right_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_C3,spectral_entropy,theta,C3,,central,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_C4,spectral_entropy,theta,C4,,central,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_P3,spectral_entropy,theta,P3,,parietal_posterior,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_P4,spectral_entropy,theta,P4,,parietal_posterior,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_O1,spectral_entropy,theta,O1,,occipital,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_O2,spectral_entropy,theta,O2,,occipital,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_F7,spectral_entropy,theta,F7,,left_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_F8,spectral_entropy,theta,F8,,right_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_T7,spectral_entropy,theta,T7,,left_temporal,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_T8,spectral_entropy,theta,T8,,right_temporal,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_P7,spectral_entropy,theta,P7,,parietal_posterior,,,,dimensionless normalized entropy,node
+spectral_entropy_theta_P8,spectral_entropy,theta,P8,,parietal_posterior,,,,dimensionless normalized entropy,node
+power_log10_alpha_FP1,absolute_power,alpha,FP1,,left_frontal,,,,log10(microvolt^2),node
+relative_log10_alpha_FP1,relative_power,alpha,FP1,,left_frontal,,,,log10(fraction),node
+power_log10_alpha_FP2,absolute_power,alpha,FP2,,right_frontal,,,,log10(microvolt^2),node
+relative_log10_alpha_FP2,relative_power,alpha,FP2,,right_frontal,,,,log10(fraction),node
+power_log10_alpha_F3,absolute_power,alpha,F3,,left_frontal,,,,log10(microvolt^2),node
+relative_log10_alpha_F3,relative_power,alpha,F3,,left_frontal,,,,log10(fraction),node
+power_log10_alpha_F4,absolute_power,alpha,F4,,right_frontal,,,,log10(microvolt^2),node
+relative_log10_alpha_F4,relative_power,alpha,F4,,right_frontal,,,,log10(fraction),node
+power_log10_alpha_C3,absolute_power,alpha,C3,,central,,,,log10(microvolt^2),node
+relative_log10_alpha_C3,relative_power,alpha,C3,,central,,,,log10(fraction),node
+power_log10_alpha_C4,absolute_power,alpha,C4,,central,,,,log10(microvolt^2),node
+relative_log10_alpha_C4,relative_power,alpha,C4,,central,,,,log10(fraction),node
+power_log10_alpha_P3,absolute_power,alpha,P3,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_alpha_P3,relative_power,alpha,P3,,parietal_posterior,,,,log10(fraction),node
+power_log10_alpha_P4,absolute_power,alpha,P4,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_alpha_P4,relative_power,alpha,P4,,parietal_posterior,,,,log10(fraction),node
+power_log10_alpha_O1,absolute_power,alpha,O1,,occipital,,,,log10(microvolt^2),node
+relative_log10_alpha_O1,relative_power,alpha,O1,,occipital,,,,log10(fraction),node
+power_log10_alpha_O2,absolute_power,alpha,O2,,occipital,,,,log10(microvolt^2),node
+relative_log10_alpha_O2,relative_power,alpha,O2,,occipital,,,,log10(fraction),node
+power_log10_alpha_F7,absolute_power,alpha,F7,,left_frontal,,,,log10(microvolt^2),node
+relative_log10_alpha_F7,relative_power,alpha,F7,,left_frontal,,,,log10(fraction),node
+power_log10_alpha_F8,absolute_power,alpha,F8,,right_frontal,,,,log10(microvolt^2),node
+relative_log10_alpha_F8,relative_power,alpha,F8,,right_frontal,,,,log10(fraction),node
+power_log10_alpha_T7,absolute_power,alpha,T7,,left_temporal,,,,log10(microvolt^2),node
+relative_log10_alpha_T7,relative_power,alpha,T7,,left_temporal,,,,log10(fraction),node
+power_log10_alpha_T8,absolute_power,alpha,T8,,right_temporal,,,,log10(microvolt^2),node
+relative_log10_alpha_T8,relative_power,alpha,T8,,right_temporal,,,,log10(fraction),node
+power_log10_alpha_P7,absolute_power,alpha,P7,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_alpha_P7,relative_power,alpha,P7,,parietal_posterior,,,,log10(fraction),node
+power_log10_alpha_P8,absolute_power,alpha,P8,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_alpha_P8,relative_power,alpha,P8,,parietal_posterior,,,,log10(fraction),node
+spectral_entropy_alpha_FP1,spectral_entropy,alpha,FP1,,left_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_FP2,spectral_entropy,alpha,FP2,,right_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_F3,spectral_entropy,alpha,F3,,left_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_F4,spectral_entropy,alpha,F4,,right_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_C3,spectral_entropy,alpha,C3,,central,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_C4,spectral_entropy,alpha,C4,,central,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_P3,spectral_entropy,alpha,P3,,parietal_posterior,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_P4,spectral_entropy,alpha,P4,,parietal_posterior,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_O1,spectral_entropy,alpha,O1,,occipital,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_O2,spectral_entropy,alpha,O2,,occipital,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_F7,spectral_entropy,alpha,F7,,left_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_F8,spectral_entropy,alpha,F8,,right_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_T7,spectral_entropy,alpha,T7,,left_temporal,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_T8,spectral_entropy,alpha,T8,,right_temporal,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_P7,spectral_entropy,alpha,P7,,parietal_posterior,,,,dimensionless normalized entropy,node
+spectral_entropy_alpha_P8,spectral_entropy,alpha,P8,,parietal_posterior,,,,dimensionless normalized entropy,node
+power_log10_beta_FP1,absolute_power,beta,FP1,,left_frontal,,,,log10(microvolt^2),node
+relative_log10_beta_FP1,relative_power,beta,FP1,,left_frontal,,,,log10(fraction),node
+power_log10_beta_FP2,absolute_power,beta,FP2,,right_frontal,,,,log10(microvolt^2),node
+relative_log10_beta_FP2,relative_power,beta,FP2,,right_frontal,,,,log10(fraction),node
+power_log10_beta_F3,absolute_power,beta,F3,,left_frontal,,,,log10(microvolt^2),node
+relative_log10_beta_F3,relative_power,beta,F3,,left_frontal,,,,log10(fraction),node
+power_log10_beta_F4,absolute_power,beta,F4,,right_frontal,,,,log10(microvolt^2),node
+relative_log10_beta_F4,relative_power,beta,F4,,right_frontal,,,,log10(fraction),node
+power_log10_beta_C3,absolute_power,beta,C3,,central,,,,log10(microvolt^2),node
+relative_log10_beta_C3,relative_power,beta,C3,,central,,,,log10(fraction),node
+power_log10_beta_C4,absolute_power,beta,C4,,central,,,,log10(microvolt^2),node
+relative_log10_beta_C4,relative_power,beta,C4,,central,,,,log10(fraction),node
+power_log10_beta_P3,absolute_power,beta,P3,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_beta_P3,relative_power,beta,P3,,parietal_posterior,,,,log10(fraction),node
+power_log10_beta_P4,absolute_power,beta,P4,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_beta_P4,relative_power,beta,P4,,parietal_posterior,,,,log10(fraction),node
+power_log10_beta_O1,absolute_power,beta,O1,,occipital,,,,log10(microvolt^2),node
+relative_log10_beta_O1,relative_power,beta,O1,,occipital,,,,log10(fraction),node
+power_log10_beta_O2,absolute_power,beta,O2,,occipital,,,,log10(microvolt^2),node
+relative_log10_beta_O2,relative_power,beta,O2,,occipital,,,,log10(fraction),node
+power_log10_beta_F7,absolute_power,beta,F7,,left_frontal,,,,log10(microvolt^2),node
+relative_log10_beta_F7,relative_power,beta,F7,,left_frontal,,,,log10(fraction),node
+power_log10_beta_F8,absolute_power,beta,F8,,right_frontal,,,,log10(microvolt^2),node
+relative_log10_beta_F8,relative_power,beta,F8,,right_frontal,,,,log10(fraction),node
+power_log10_beta_T7,absolute_power,beta,T7,,left_temporal,,,,log10(microvolt^2),node
+relative_log10_beta_T7,relative_power,beta,T7,,left_temporal,,,,log10(fraction),node
+power_log10_beta_T8,absolute_power,beta,T8,,right_temporal,,,,log10(microvolt^2),node
+relative_log10_beta_T8,relative_power,beta,T8,,right_temporal,,,,log10(fraction),node
+power_log10_beta_P7,absolute_power,beta,P7,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_beta_P7,relative_power,beta,P7,,parietal_posterior,,,,log10(fraction),node
+power_log10_beta_P8,absolute_power,beta,P8,,parietal_posterior,,,,log10(microvolt^2),node
+relative_log10_beta_P8,relative_power,beta,P8,,parietal_posterior,,,,log10(fraction),node
+spectral_entropy_beta_FP1,spectral_entropy,beta,FP1,,left_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_FP2,spectral_entropy,beta,FP2,,right_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_F3,spectral_entropy,beta,F3,,left_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_F4,spectral_entropy,beta,F4,,right_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_C3,spectral_entropy,beta,C3,,central,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_C4,spectral_entropy,beta,C4,,central,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_P3,spectral_entropy,beta,P3,,parietal_posterior,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_P4,spectral_entropy,beta,P4,,parietal_posterior,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_O1,spectral_entropy,beta,O1,,occipital,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_O2,spectral_entropy,beta,O2,,occipital,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_F7,spectral_entropy,beta,F7,,left_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_F8,spectral_entropy,beta,F8,,right_frontal,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_T7,spectral_entropy,beta,T7,,left_temporal,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_T8,spectral_entropy,beta,T8,,right_temporal,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_P7,spectral_entropy,beta,P7,,parietal_posterior,,,,dimensionless normalized entropy,node
+spectral_entropy_beta_P8,spectral_entropy,beta,P8,,parietal_posterior,,,,dimensionless normalized entropy,node
+dwpli2_delta_FP1__FP2,connectivity,delta,FP1,FP2,left_frontal,right_frontal,left_frontal--right_frontal,FP1--FP2,signed debiased squared wPLI,edge
+dwpli2_delta_FP1__F3,connectivity,delta,FP1,F3,left_frontal,left_frontal,left_frontal--left_frontal,F3--FP1,signed debiased squared wPLI,edge
+dwpli2_delta_FP1__F4,connectivity,delta,FP1,F4,left_frontal,right_frontal,left_frontal--right_frontal,F4--FP1,signed debiased squared wPLI,edge
+dwpli2_delta_FP1__C3,connectivity,delta,FP1,C3,left_frontal,central,central--left_frontal,C3--FP1,signed debiased squared wPLI,edge
+dwpli2_delta_FP1__C4,connectivity,delta,FP1,C4,left_frontal,central,central--left_frontal,C4--FP1,signed debiased squared wPLI,edge
+dwpli2_delta_FP1__P3,connectivity,delta,FP1,P3,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P3,signed debiased squared wPLI,edge
+dwpli2_delta_FP1__P4,connectivity,delta,FP1,P4,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P4,signed debiased squared wPLI,edge
+dwpli2_delta_FP1__O1,connectivity,delta,FP1,O1,left_frontal,occipital,left_frontal--occipital,FP1--O1,signed debiased squared wPLI,edge
+dwpli2_delta_FP1__O2,connectivity,delta,FP1,O2,left_frontal,occipital,left_frontal--occipital,FP1--O2,signed debiased squared wPLI,edge
+dwpli2_delta_FP1__F7,connectivity,delta,FP1,F7,left_frontal,left_frontal,left_frontal--left_frontal,F7--FP1,signed debiased squared wPLI,edge
+dwpli2_delta_FP1__F8,connectivity,delta,FP1,F8,left_frontal,right_frontal,left_frontal--right_frontal,F8--FP1,signed debiased squared wPLI,edge
+dwpli2_delta_FP1__T7,connectivity,delta,FP1,T7,left_frontal,left_temporal,left_frontal--left_temporal,FP1--T7,signed debiased squared wPLI,edge
+dwpli2_delta_FP1__T8,connectivity,delta,FP1,T8,left_frontal,right_temporal,left_frontal--right_temporal,FP1--T8,signed debiased squared wPLI,edge
+dwpli2_delta_FP1__P7,connectivity,delta,FP1,P7,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P7,signed debiased squared wPLI,edge
+dwpli2_delta_FP1__P8,connectivity,delta,FP1,P8,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P8,signed debiased squared wPLI,edge
+dwpli2_delta_FP2__F3,connectivity,delta,FP2,F3,right_frontal,left_frontal,left_frontal--right_frontal,F3--FP2,signed debiased squared wPLI,edge
+dwpli2_delta_FP2__F4,connectivity,delta,FP2,F4,right_frontal,right_frontal,right_frontal--right_frontal,F4--FP2,signed debiased squared wPLI,edge
+dwpli2_delta_FP2__C3,connectivity,delta,FP2,C3,right_frontal,central,central--right_frontal,C3--FP2,signed debiased squared wPLI,edge
+dwpli2_delta_FP2__C4,connectivity,delta,FP2,C4,right_frontal,central,central--right_frontal,C4--FP2,signed debiased squared wPLI,edge
+dwpli2_delta_FP2__P3,connectivity,delta,FP2,P3,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P3,signed debiased squared wPLI,edge
+dwpli2_delta_FP2__P4,connectivity,delta,FP2,P4,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P4,signed debiased squared wPLI,edge
+dwpli2_delta_FP2__O1,connectivity,delta,FP2,O1,right_frontal,occipital,occipital--right_frontal,FP2--O1,signed debiased squared wPLI,edge
+dwpli2_delta_FP2__O2,connectivity,delta,FP2,O2,right_frontal,occipital,occipital--right_frontal,FP2--O2,signed debiased squared wPLI,edge
+dwpli2_delta_FP2__F7,connectivity,delta,FP2,F7,right_frontal,left_frontal,left_frontal--right_frontal,F7--FP2,signed debiased squared wPLI,edge
+dwpli2_delta_FP2__F8,connectivity,delta,FP2,F8,right_frontal,right_frontal,right_frontal--right_frontal,F8--FP2,signed debiased squared wPLI,edge
+dwpli2_delta_FP2__T7,connectivity,delta,FP2,T7,right_frontal,left_temporal,left_temporal--right_frontal,FP2--T7,signed debiased squared wPLI,edge
+dwpli2_delta_FP2__T8,connectivity,delta,FP2,T8,right_frontal,right_temporal,right_frontal--right_temporal,FP2--T8,signed debiased squared wPLI,edge
+dwpli2_delta_FP2__P7,connectivity,delta,FP2,P7,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P7,signed debiased squared wPLI,edge
+dwpli2_delta_FP2__P8,connectivity,delta,FP2,P8,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P8,signed debiased squared wPLI,edge
+dwpli2_delta_F3__F4,connectivity,delta,F3,F4,left_frontal,right_frontal,left_frontal--right_frontal,F3--F4,signed debiased squared wPLI,edge
+dwpli2_delta_F3__C3,connectivity,delta,F3,C3,left_frontal,central,central--left_frontal,C3--F3,signed debiased squared wPLI,edge
+dwpli2_delta_F3__C4,connectivity,delta,F3,C4,left_frontal,central,central--left_frontal,C4--F3,signed debiased squared wPLI,edge
+dwpli2_delta_F3__P3,connectivity,delta,F3,P3,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P3,signed debiased squared wPLI,edge
+dwpli2_delta_F3__P4,connectivity,delta,F3,P4,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P4,signed debiased squared wPLI,edge
+dwpli2_delta_F3__O1,connectivity,delta,F3,O1,left_frontal,occipital,left_frontal--occipital,F3--O1,signed debiased squared wPLI,edge
+dwpli2_delta_F3__O2,connectivity,delta,F3,O2,left_frontal,occipital,left_frontal--occipital,F3--O2,signed debiased squared wPLI,edge
+dwpli2_delta_F3__F7,connectivity,delta,F3,F7,left_frontal,left_frontal,left_frontal--left_frontal,F3--F7,signed debiased squared wPLI,edge
+dwpli2_delta_F3__F8,connectivity,delta,F3,F8,left_frontal,right_frontal,left_frontal--right_frontal,F3--F8,signed debiased squared wPLI,edge
+dwpli2_delta_F3__T7,connectivity,delta,F3,T7,left_frontal,left_temporal,left_frontal--left_temporal,F3--T7,signed debiased squared wPLI,edge
+dwpli2_delta_F3__T8,connectivity,delta,F3,T8,left_frontal,right_temporal,left_frontal--right_temporal,F3--T8,signed debiased squared wPLI,edge
+dwpli2_delta_F3__P7,connectivity,delta,F3,P7,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P7,signed debiased squared wPLI,edge
+dwpli2_delta_F3__P8,connectivity,delta,F3,P8,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P8,signed debiased squared wPLI,edge
+dwpli2_delta_F4__C3,connectivity,delta,F4,C3,right_frontal,central,central--right_frontal,C3--F4,signed debiased squared wPLI,edge
+dwpli2_delta_F4__C4,connectivity,delta,F4,C4,right_frontal,central,central--right_frontal,C4--F4,signed debiased squared wPLI,edge
+dwpli2_delta_F4__P3,connectivity,delta,F4,P3,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P3,signed debiased squared wPLI,edge
+dwpli2_delta_F4__P4,connectivity,delta,F4,P4,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P4,signed debiased squared wPLI,edge
+dwpli2_delta_F4__O1,connectivity,delta,F4,O1,right_frontal,occipital,occipital--right_frontal,F4--O1,signed debiased squared wPLI,edge
+dwpli2_delta_F4__O2,connectivity,delta,F4,O2,right_frontal,occipital,occipital--right_frontal,F4--O2,signed debiased squared wPLI,edge
+dwpli2_delta_F4__F7,connectivity,delta,F4,F7,right_frontal,left_frontal,left_frontal--right_frontal,F4--F7,signed debiased squared wPLI,edge
+dwpli2_delta_F4__F8,connectivity,delta,F4,F8,right_frontal,right_frontal,right_frontal--right_frontal,F4--F8,signed debiased squared wPLI,edge
+dwpli2_delta_F4__T7,connectivity,delta,F4,T7,right_frontal,left_temporal,left_temporal--right_frontal,F4--T7,signed debiased squared wPLI,edge
+dwpli2_delta_F4__T8,connectivity,delta,F4,T8,right_frontal,right_temporal,right_frontal--right_temporal,F4--T8,signed debiased squared wPLI,edge
+dwpli2_delta_F4__P7,connectivity,delta,F4,P7,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P7,signed debiased squared wPLI,edge
+dwpli2_delta_F4__P8,connectivity,delta,F4,P8,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P8,signed debiased squared wPLI,edge
+dwpli2_delta_C3__C4,connectivity,delta,C3,C4,central,central,central--central,C3--C4,signed debiased squared wPLI,edge
+dwpli2_delta_C3__P3,connectivity,delta,C3,P3,central,parietal_posterior,central--parietal_posterior,C3--P3,signed debiased squared wPLI,edge
+dwpli2_delta_C3__P4,connectivity,delta,C3,P4,central,parietal_posterior,central--parietal_posterior,C3--P4,signed debiased squared wPLI,edge
+dwpli2_delta_C3__O1,connectivity,delta,C3,O1,central,occipital,central--occipital,C3--O1,signed debiased squared wPLI,edge
+dwpli2_delta_C3__O2,connectivity,delta,C3,O2,central,occipital,central--occipital,C3--O2,signed debiased squared wPLI,edge
+dwpli2_delta_C3__F7,connectivity,delta,C3,F7,central,left_frontal,central--left_frontal,C3--F7,signed debiased squared wPLI,edge
+dwpli2_delta_C3__F8,connectivity,delta,C3,F8,central,right_frontal,central--right_frontal,C3--F8,signed debiased squared wPLI,edge
+dwpli2_delta_C3__T7,connectivity,delta,C3,T7,central,left_temporal,central--left_temporal,C3--T7,signed debiased squared wPLI,edge
+dwpli2_delta_C3__T8,connectivity,delta,C3,T8,central,right_temporal,central--right_temporal,C3--T8,signed debiased squared wPLI,edge
+dwpli2_delta_C3__P7,connectivity,delta,C3,P7,central,parietal_posterior,central--parietal_posterior,C3--P7,signed debiased squared wPLI,edge
+dwpli2_delta_C3__P8,connectivity,delta,C3,P8,central,parietal_posterior,central--parietal_posterior,C3--P8,signed debiased squared wPLI,edge
+dwpli2_delta_C4__P3,connectivity,delta,C4,P3,central,parietal_posterior,central--parietal_posterior,C4--P3,signed debiased squared wPLI,edge
+dwpli2_delta_C4__P4,connectivity,delta,C4,P4,central,parietal_posterior,central--parietal_posterior,C4--P4,signed debiased squared wPLI,edge
+dwpli2_delta_C4__O1,connectivity,delta,C4,O1,central,occipital,central--occipital,C4--O1,signed debiased squared wPLI,edge
+dwpli2_delta_C4__O2,connectivity,delta,C4,O2,central,occipital,central--occipital,C4--O2,signed debiased squared wPLI,edge
+dwpli2_delta_C4__F7,connectivity,delta,C4,F7,central,left_frontal,central--left_frontal,C4--F7,signed debiased squared wPLI,edge
+dwpli2_delta_C4__F8,connectivity,delta,C4,F8,central,right_frontal,central--right_frontal,C4--F8,signed debiased squared wPLI,edge
+dwpli2_delta_C4__T7,connectivity,delta,C4,T7,central,left_temporal,central--left_temporal,C4--T7,signed debiased squared wPLI,edge
+dwpli2_delta_C4__T8,connectivity,delta,C4,T8,central,right_temporal,central--right_temporal,C4--T8,signed debiased squared wPLI,edge
+dwpli2_delta_C4__P7,connectivity,delta,C4,P7,central,parietal_posterior,central--parietal_posterior,C4--P7,signed debiased squared wPLI,edge
+dwpli2_delta_C4__P8,connectivity,delta,C4,P8,central,parietal_posterior,central--parietal_posterior,C4--P8,signed debiased squared wPLI,edge
+dwpli2_delta_P3__P4,connectivity,delta,P3,P4,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P3--P4,signed debiased squared wPLI,edge
+dwpli2_delta_P3__O1,connectivity,delta,P3,O1,parietal_posterior,occipital,occipital--parietal_posterior,O1--P3,signed debiased squared wPLI,edge
+dwpli2_delta_P3__O2,connectivity,delta,P3,O2,parietal_posterior,occipital,occipital--parietal_posterior,O2--P3,signed debiased squared wPLI,edge
+dwpli2_delta_P3__F7,connectivity,delta,P3,F7,parietal_posterior,left_frontal,left_frontal--parietal_posterior,F7--P3,signed debiased squared wPLI,edge
+dwpli2_delta_P3__F8,connectivity,delta,P3,F8,parietal_posterior,right_frontal,parietal_posterior--right_frontal,F8--P3,signed debiased squared wPLI,edge
+dwpli2_delta_P3__T7,connectivity,delta,P3,T7,parietal_posterior,left_temporal,left_temporal--parietal_posterior,P3--T7,signed debiased squared wPLI,edge
+dwpli2_delta_P3__T8,connectivity,delta,P3,T8,parietal_posterior,right_temporal,parietal_posterior--right_temporal,P3--T8,signed debiased squared wPLI,edge
+dwpli2_delta_P3__P7,connectivity,delta,P3,P7,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P3--P7,signed debiased squared wPLI,edge
+dwpli2_delta_P3__P8,connectivity,delta,P3,P8,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P3--P8,signed debiased squared wPLI,edge
+dwpli2_delta_P4__O1,connectivity,delta,P4,O1,parietal_posterior,occipital,occipital--parietal_posterior,O1--P4,signed debiased squared wPLI,edge
+dwpli2_delta_P4__O2,connectivity,delta,P4,O2,parietal_posterior,occipital,occipital--parietal_posterior,O2--P4,signed debiased squared wPLI,edge
+dwpli2_delta_P4__F7,connectivity,delta,P4,F7,parietal_posterior,left_frontal,left_frontal--parietal_posterior,F7--P4,signed debiased squared wPLI,edge
+dwpli2_delta_P4__F8,connectivity,delta,P4,F8,parietal_posterior,right_frontal,parietal_posterior--right_frontal,F8--P4,signed debiased squared wPLI,edge
+dwpli2_delta_P4__T7,connectivity,delta,P4,T7,parietal_posterior,left_temporal,left_temporal--parietal_posterior,P4--T7,signed debiased squared wPLI,edge
+dwpli2_delta_P4__T8,connectivity,delta,P4,T8,parietal_posterior,right_temporal,parietal_posterior--right_temporal,P4--T8,signed debiased squared wPLI,edge
+dwpli2_delta_P4__P7,connectivity,delta,P4,P7,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P4--P7,signed debiased squared wPLI,edge
+dwpli2_delta_P4__P8,connectivity,delta,P4,P8,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P4--P8,signed debiased squared wPLI,edge
+dwpli2_delta_O1__O2,connectivity,delta,O1,O2,occipital,occipital,occipital--occipital,O1--O2,signed debiased squared wPLI,edge
+dwpli2_delta_O1__F7,connectivity,delta,O1,F7,occipital,left_frontal,left_frontal--occipital,F7--O1,signed debiased squared wPLI,edge
+dwpli2_delta_O1__F8,connectivity,delta,O1,F8,occipital,right_frontal,occipital--right_frontal,F8--O1,signed debiased squared wPLI,edge
+dwpli2_delta_O1__T7,connectivity,delta,O1,T7,occipital,left_temporal,left_temporal--occipital,O1--T7,signed debiased squared wPLI,edge
+dwpli2_delta_O1__T8,connectivity,delta,O1,T8,occipital,right_temporal,occipital--right_temporal,O1--T8,signed debiased squared wPLI,edge
+dwpli2_delta_O1__P7,connectivity,delta,O1,P7,occipital,parietal_posterior,occipital--parietal_posterior,O1--P7,signed debiased squared wPLI,edge
+dwpli2_delta_O1__P8,connectivity,delta,O1,P8,occipital,parietal_posterior,occipital--parietal_posterior,O1--P8,signed debiased squared wPLI,edge
+dwpli2_delta_O2__F7,connectivity,delta,O2,F7,occipital,left_frontal,left_frontal--occipital,F7--O2,signed debiased squared wPLI,edge
+dwpli2_delta_O2__F8,connectivity,delta,O2,F8,occipital,right_frontal,occipital--right_frontal,F8--O2,signed debiased squared wPLI,edge
+dwpli2_delta_O2__T7,connectivity,delta,O2,T7,occipital,left_temporal,left_temporal--occipital,O2--T7,signed debiased squared wPLI,edge
+dwpli2_delta_O2__T8,connectivity,delta,O2,T8,occipital,right_temporal,occipital--right_temporal,O2--T8,signed debiased squared wPLI,edge
+dwpli2_delta_O2__P7,connectivity,delta,O2,P7,occipital,parietal_posterior,occipital--parietal_posterior,O2--P7,signed debiased squared wPLI,edge
+dwpli2_delta_O2__P8,connectivity,delta,O2,P8,occipital,parietal_posterior,occipital--parietal_posterior,O2--P8,signed debiased squared wPLI,edge
+dwpli2_delta_F7__F8,connectivity,delta,F7,F8,left_frontal,right_frontal,left_frontal--right_frontal,F7--F8,signed debiased squared wPLI,edge
+dwpli2_delta_F7__T7,connectivity,delta,F7,T7,left_frontal,left_temporal,left_frontal--left_temporal,F7--T7,signed debiased squared wPLI,edge
+dwpli2_delta_F7__T8,connectivity,delta,F7,T8,left_frontal,right_temporal,left_frontal--right_temporal,F7--T8,signed debiased squared wPLI,edge
+dwpli2_delta_F7__P7,connectivity,delta,F7,P7,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F7--P7,signed debiased squared wPLI,edge
+dwpli2_delta_F7__P8,connectivity,delta,F7,P8,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F7--P8,signed debiased squared wPLI,edge
+dwpli2_delta_F8__T7,connectivity,delta,F8,T7,right_frontal,left_temporal,left_temporal--right_frontal,F8--T7,signed debiased squared wPLI,edge
+dwpli2_delta_F8__T8,connectivity,delta,F8,T8,right_frontal,right_temporal,right_frontal--right_temporal,F8--T8,signed debiased squared wPLI,edge
+dwpli2_delta_F8__P7,connectivity,delta,F8,P7,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F8--P7,signed debiased squared wPLI,edge
+dwpli2_delta_F8__P8,connectivity,delta,F8,P8,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F8--P8,signed debiased squared wPLI,edge
+dwpli2_delta_T7__T8,connectivity,delta,T7,T8,left_temporal,right_temporal,left_temporal--right_temporal,T7--T8,signed debiased squared wPLI,edge
+dwpli2_delta_T7__P7,connectivity,delta,T7,P7,left_temporal,parietal_posterior,left_temporal--parietal_posterior,P7--T7,signed debiased squared wPLI,edge
+dwpli2_delta_T7__P8,connectivity,delta,T7,P8,left_temporal,parietal_posterior,left_temporal--parietal_posterior,P8--T7,signed debiased squared wPLI,edge
+dwpli2_delta_T8__P7,connectivity,delta,T8,P7,right_temporal,parietal_posterior,parietal_posterior--right_temporal,P7--T8,signed debiased squared wPLI,edge
+dwpli2_delta_T8__P8,connectivity,delta,T8,P8,right_temporal,parietal_posterior,parietal_posterior--right_temporal,P8--T8,signed debiased squared wPLI,edge
+dwpli2_delta_P7__P8,connectivity,delta,P7,P8,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P7--P8,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__FP2,connectivity,theta,FP1,FP2,left_frontal,right_frontal,left_frontal--right_frontal,FP1--FP2,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__F3,connectivity,theta,FP1,F3,left_frontal,left_frontal,left_frontal--left_frontal,F3--FP1,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__F4,connectivity,theta,FP1,F4,left_frontal,right_frontal,left_frontal--right_frontal,F4--FP1,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__C3,connectivity,theta,FP1,C3,left_frontal,central,central--left_frontal,C3--FP1,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__C4,connectivity,theta,FP1,C4,left_frontal,central,central--left_frontal,C4--FP1,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__P3,connectivity,theta,FP1,P3,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P3,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__P4,connectivity,theta,FP1,P4,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P4,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__O1,connectivity,theta,FP1,O1,left_frontal,occipital,left_frontal--occipital,FP1--O1,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__O2,connectivity,theta,FP1,O2,left_frontal,occipital,left_frontal--occipital,FP1--O2,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__F7,connectivity,theta,FP1,F7,left_frontal,left_frontal,left_frontal--left_frontal,F7--FP1,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__F8,connectivity,theta,FP1,F8,left_frontal,right_frontal,left_frontal--right_frontal,F8--FP1,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__T7,connectivity,theta,FP1,T7,left_frontal,left_temporal,left_frontal--left_temporal,FP1--T7,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__T8,connectivity,theta,FP1,T8,left_frontal,right_temporal,left_frontal--right_temporal,FP1--T8,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__P7,connectivity,theta,FP1,P7,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P7,signed debiased squared wPLI,edge
+dwpli2_theta_FP1__P8,connectivity,theta,FP1,P8,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P8,signed debiased squared wPLI,edge
+dwpli2_theta_FP2__F3,connectivity,theta,FP2,F3,right_frontal,left_frontal,left_frontal--right_frontal,F3--FP2,signed debiased squared wPLI,edge
+dwpli2_theta_FP2__F4,connectivity,theta,FP2,F4,right_frontal,right_frontal,right_frontal--right_frontal,F4--FP2,signed debiased squared wPLI,edge
+dwpli2_theta_FP2__C3,connectivity,theta,FP2,C3,right_frontal,central,central--right_frontal,C3--FP2,signed debiased squared wPLI,edge
+dwpli2_theta_FP2__C4,connectivity,theta,FP2,C4,right_frontal,central,central--right_frontal,C4--FP2,signed debiased squared wPLI,edge
+dwpli2_theta_FP2__P3,connectivity,theta,FP2,P3,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P3,signed debiased squared wPLI,edge
+dwpli2_theta_FP2__P4,connectivity,theta,FP2,P4,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P4,signed debiased squared wPLI,edge
+dwpli2_theta_FP2__O1,connectivity,theta,FP2,O1,right_frontal,occipital,occipital--right_frontal,FP2--O1,signed debiased squared wPLI,edge
+dwpli2_theta_FP2__O2,connectivity,theta,FP2,O2,right_frontal,occipital,occipital--right_frontal,FP2--O2,signed debiased squared wPLI,edge
+dwpli2_theta_FP2__F7,connectivity,theta,FP2,F7,right_frontal,left_frontal,left_frontal--right_frontal,F7--FP2,signed debiased squared wPLI,edge
+dwpli2_theta_FP2__F8,connectivity,theta,FP2,F8,right_frontal,right_frontal,right_frontal--right_frontal,F8--FP2,signed debiased squared wPLI,edge
+dwpli2_theta_FP2__T7,connectivity,theta,FP2,T7,right_frontal,left_temporal,left_temporal--right_frontal,FP2--T7,signed debiased squared wPLI,edge
+dwpli2_theta_FP2__T8,connectivity,theta,FP2,T8,right_frontal,right_temporal,right_frontal--right_temporal,FP2--T8,signed debiased squared wPLI,edge
+dwpli2_theta_FP2__P7,connectivity,theta,FP2,P7,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P7,signed debiased squared wPLI,edge
+dwpli2_theta_FP2__P8,connectivity,theta,FP2,P8,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P8,signed debiased squared wPLI,edge
+dwpli2_theta_F3__F4,connectivity,theta,F3,F4,left_frontal,right_frontal,left_frontal--right_frontal,F3--F4,signed debiased squared wPLI,edge
+dwpli2_theta_F3__C3,connectivity,theta,F3,C3,left_frontal,central,central--left_frontal,C3--F3,signed debiased squared wPLI,edge
+dwpli2_theta_F3__C4,connectivity,theta,F3,C4,left_frontal,central,central--left_frontal,C4--F3,signed debiased squared wPLI,edge
+dwpli2_theta_F3__P3,connectivity,theta,F3,P3,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P3,signed debiased squared wPLI,edge
+dwpli2_theta_F3__P4,connectivity,theta,F3,P4,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P4,signed debiased squared wPLI,edge
+dwpli2_theta_F3__O1,connectivity,theta,F3,O1,left_frontal,occipital,left_frontal--occipital,F3--O1,signed debiased squared wPLI,edge
+dwpli2_theta_F3__O2,connectivity,theta,F3,O2,left_frontal,occipital,left_frontal--occipital,F3--O2,signed debiased squared wPLI,edge
+dwpli2_theta_F3__F7,connectivity,theta,F3,F7,left_frontal,left_frontal,left_frontal--left_frontal,F3--F7,signed debiased squared wPLI,edge
+dwpli2_theta_F3__F8,connectivity,theta,F3,F8,left_frontal,right_frontal,left_frontal--right_frontal,F3--F8,signed debiased squared wPLI,edge
+dwpli2_theta_F3__T7,connectivity,theta,F3,T7,left_frontal,left_temporal,left_frontal--left_temporal,F3--T7,signed debiased squared wPLI,edge
+dwpli2_theta_F3__T8,connectivity,theta,F3,T8,left_frontal,right_temporal,left_frontal--right_temporal,F3--T8,signed debiased squared wPLI,edge
+dwpli2_theta_F3__P7,connectivity,theta,F3,P7,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P7,signed debiased squared wPLI,edge
+dwpli2_theta_F3__P8,connectivity,theta,F3,P8,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P8,signed debiased squared wPLI,edge
+dwpli2_theta_F4__C3,connectivity,theta,F4,C3,right_frontal,central,central--right_frontal,C3--F4,signed debiased squared wPLI,edge
+dwpli2_theta_F4__C4,connectivity,theta,F4,C4,right_frontal,central,central--right_frontal,C4--F4,signed debiased squared wPLI,edge
+dwpli2_theta_F4__P3,connectivity,theta,F4,P3,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P3,signed debiased squared wPLI,edge
+dwpli2_theta_F4__P4,connectivity,theta,F4,P4,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P4,signed debiased squared wPLI,edge
+dwpli2_theta_F4__O1,connectivity,theta,F4,O1,right_frontal,occipital,occipital--right_frontal,F4--O1,signed debiased squared wPLI,edge
+dwpli2_theta_F4__O2,connectivity,theta,F4,O2,right_frontal,occipital,occipital--right_frontal,F4--O2,signed debiased squared wPLI,edge
+dwpli2_theta_F4__F7,connectivity,theta,F4,F7,right_frontal,left_frontal,left_frontal--right_frontal,F4--F7,signed debiased squared wPLI,edge
+dwpli2_theta_F4__F8,connectivity,theta,F4,F8,right_frontal,right_frontal,right_frontal--right_frontal,F4--F8,signed debiased squared wPLI,edge
+dwpli2_theta_F4__T7,connectivity,theta,F4,T7,right_frontal,left_temporal,left_temporal--right_frontal,F4--T7,signed debiased squared wPLI,edge
+dwpli2_theta_F4__T8,connectivity,theta,F4,T8,right_frontal,right_temporal,right_frontal--right_temporal,F4--T8,signed debiased squared wPLI,edge
+dwpli2_theta_F4__P7,connectivity,theta,F4,P7,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P7,signed debiased squared wPLI,edge
+dwpli2_theta_F4__P8,connectivity,theta,F4,P8,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P8,signed debiased squared wPLI,edge
+dwpli2_theta_C3__C4,connectivity,theta,C3,C4,central,central,central--central,C3--C4,signed debiased squared wPLI,edge
+dwpli2_theta_C3__P3,connectivity,theta,C3,P3,central,parietal_posterior,central--parietal_posterior,C3--P3,signed debiased squared wPLI,edge
+dwpli2_theta_C3__P4,connectivity,theta,C3,P4,central,parietal_posterior,central--parietal_posterior,C3--P4,signed debiased squared wPLI,edge
+dwpli2_theta_C3__O1,connectivity,theta,C3,O1,central,occipital,central--occipital,C3--O1,signed debiased squared wPLI,edge
+dwpli2_theta_C3__O2,connectivity,theta,C3,O2,central,occipital,central--occipital,C3--O2,signed debiased squared wPLI,edge
+dwpli2_theta_C3__F7,connectivity,theta,C3,F7,central,left_frontal,central--left_frontal,C3--F7,signed debiased squared wPLI,edge
+dwpli2_theta_C3__F8,connectivity,theta,C3,F8,central,right_frontal,central--right_frontal,C3--F8,signed debiased squared wPLI,edge
+dwpli2_theta_C3__T7,connectivity,theta,C3,T7,central,left_temporal,central--left_temporal,C3--T7,signed debiased squared wPLI,edge
+dwpli2_theta_C3__T8,connectivity,theta,C3,T8,central,right_temporal,central--right_temporal,C3--T8,signed debiased squared wPLI,edge
+dwpli2_theta_C3__P7,connectivity,theta,C3,P7,central,parietal_posterior,central--parietal_posterior,C3--P7,signed debiased squared wPLI,edge
+dwpli2_theta_C3__P8,connectivity,theta,C3,P8,central,parietal_posterior,central--parietal_posterior,C3--P8,signed debiased squared wPLI,edge
+dwpli2_theta_C4__P3,connectivity,theta,C4,P3,central,parietal_posterior,central--parietal_posterior,C4--P3,signed debiased squared wPLI,edge
+dwpli2_theta_C4__P4,connectivity,theta,C4,P4,central,parietal_posterior,central--parietal_posterior,C4--P4,signed debiased squared wPLI,edge
+dwpli2_theta_C4__O1,connectivity,theta,C4,O1,central,occipital,central--occipital,C4--O1,signed debiased squared wPLI,edge
+dwpli2_theta_C4__O2,connectivity,theta,C4,O2,central,occipital,central--occipital,C4--O2,signed debiased squared wPLI,edge
+dwpli2_theta_C4__F7,connectivity,theta,C4,F7,central,left_frontal,central--left_frontal,C4--F7,signed debiased squared wPLI,edge
+dwpli2_theta_C4__F8,connectivity,theta,C4,F8,central,right_frontal,central--right_frontal,C4--F8,signed debiased squared wPLI,edge
+dwpli2_theta_C4__T7,connectivity,theta,C4,T7,central,left_temporal,central--left_temporal,C4--T7,signed debiased squared wPLI,edge
+dwpli2_theta_C4__T8,connectivity,theta,C4,T8,central,right_temporal,central--right_temporal,C4--T8,signed debiased squared wPLI,edge
+dwpli2_theta_C4__P7,connectivity,theta,C4,P7,central,parietal_posterior,central--parietal_posterior,C4--P7,signed debiased squared wPLI,edge
+dwpli2_theta_C4__P8,connectivity,theta,C4,P8,central,parietal_posterior,central--parietal_posterior,C4--P8,signed debiased squared wPLI,edge
+dwpli2_theta_P3__P4,connectivity,theta,P3,P4,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P3--P4,signed debiased squared wPLI,edge
+dwpli2_theta_P3__O1,connectivity,theta,P3,O1,parietal_posterior,occipital,occipital--parietal_posterior,O1--P3,signed debiased squared wPLI,edge
+dwpli2_theta_P3__O2,connectivity,theta,P3,O2,parietal_posterior,occipital,occipital--parietal_posterior,O2--P3,signed debiased squared wPLI,edge
+dwpli2_theta_P3__F7,connectivity,theta,P3,F7,parietal_posterior,left_frontal,left_frontal--parietal_posterior,F7--P3,signed debiased squared wPLI,edge
+dwpli2_theta_P3__F8,connectivity,theta,P3,F8,parietal_posterior,right_frontal,parietal_posterior--right_frontal,F8--P3,signed debiased squared wPLI,edge
+dwpli2_theta_P3__T7,connectivity,theta,P3,T7,parietal_posterior,left_temporal,left_temporal--parietal_posterior,P3--T7,signed debiased squared wPLI,edge
+dwpli2_theta_P3__T8,connectivity,theta,P3,T8,parietal_posterior,right_temporal,parietal_posterior--right_temporal,P3--T8,signed debiased squared wPLI,edge
+dwpli2_theta_P3__P7,connectivity,theta,P3,P7,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P3--P7,signed debiased squared wPLI,edge
+dwpli2_theta_P3__P8,connectivity,theta,P3,P8,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P3--P8,signed debiased squared wPLI,edge
+dwpli2_theta_P4__O1,connectivity,theta,P4,O1,parietal_posterior,occipital,occipital--parietal_posterior,O1--P4,signed debiased squared wPLI,edge
+dwpli2_theta_P4__O2,connectivity,theta,P4,O2,parietal_posterior,occipital,occipital--parietal_posterior,O2--P4,signed debiased squared wPLI,edge
+dwpli2_theta_P4__F7,connectivity,theta,P4,F7,parietal_posterior,left_frontal,left_frontal--parietal_posterior,F7--P4,signed debiased squared wPLI,edge
+dwpli2_theta_P4__F8,connectivity,theta,P4,F8,parietal_posterior,right_frontal,parietal_posterior--right_frontal,F8--P4,signed debiased squared wPLI,edge
+dwpli2_theta_P4__T7,connectivity,theta,P4,T7,parietal_posterior,left_temporal,left_temporal--parietal_posterior,P4--T7,signed debiased squared wPLI,edge
+dwpli2_theta_P4__T8,connectivity,theta,P4,T8,parietal_posterior,right_temporal,parietal_posterior--right_temporal,P4--T8,signed debiased squared wPLI,edge
+dwpli2_theta_P4__P7,connectivity,theta,P4,P7,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P4--P7,signed debiased squared wPLI,edge
+dwpli2_theta_P4__P8,connectivity,theta,P4,P8,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P4--P8,signed debiased squared wPLI,edge
+dwpli2_theta_O1__O2,connectivity,theta,O1,O2,occipital,occipital,occipital--occipital,O1--O2,signed debiased squared wPLI,edge
+dwpli2_theta_O1__F7,connectivity,theta,O1,F7,occipital,left_frontal,left_frontal--occipital,F7--O1,signed debiased squared wPLI,edge
+dwpli2_theta_O1__F8,connectivity,theta,O1,F8,occipital,right_frontal,occipital--right_frontal,F8--O1,signed debiased squared wPLI,edge
+dwpli2_theta_O1__T7,connectivity,theta,O1,T7,occipital,left_temporal,left_temporal--occipital,O1--T7,signed debiased squared wPLI,edge
+dwpli2_theta_O1__T8,connectivity,theta,O1,T8,occipital,right_temporal,occipital--right_temporal,O1--T8,signed debiased squared wPLI,edge
+dwpli2_theta_O1__P7,connectivity,theta,O1,P7,occipital,parietal_posterior,occipital--parietal_posterior,O1--P7,signed debiased squared wPLI,edge
+dwpli2_theta_O1__P8,connectivity,theta,O1,P8,occipital,parietal_posterior,occipital--parietal_posterior,O1--P8,signed debiased squared wPLI,edge
+dwpli2_theta_O2__F7,connectivity,theta,O2,F7,occipital,left_frontal,left_frontal--occipital,F7--O2,signed debiased squared wPLI,edge
+dwpli2_theta_O2__F8,connectivity,theta,O2,F8,occipital,right_frontal,occipital--right_frontal,F8--O2,signed debiased squared wPLI,edge
+dwpli2_theta_O2__T7,connectivity,theta,O2,T7,occipital,left_temporal,left_temporal--occipital,O2--T7,signed debiased squared wPLI,edge
+dwpli2_theta_O2__T8,connectivity,theta,O2,T8,occipital,right_temporal,occipital--right_temporal,O2--T8,signed debiased squared wPLI,edge
+dwpli2_theta_O2__P7,connectivity,theta,O2,P7,occipital,parietal_posterior,occipital--parietal_posterior,O2--P7,signed debiased squared wPLI,edge
+dwpli2_theta_O2__P8,connectivity,theta,O2,P8,occipital,parietal_posterior,occipital--parietal_posterior,O2--P8,signed debiased squared wPLI,edge
+dwpli2_theta_F7__F8,connectivity,theta,F7,F8,left_frontal,right_frontal,left_frontal--right_frontal,F7--F8,signed debiased squared wPLI,edge
+dwpli2_theta_F7__T7,connectivity,theta,F7,T7,left_frontal,left_temporal,left_frontal--left_temporal,F7--T7,signed debiased squared wPLI,edge
+dwpli2_theta_F7__T8,connectivity,theta,F7,T8,left_frontal,right_temporal,left_frontal--right_temporal,F7--T8,signed debiased squared wPLI,edge
+dwpli2_theta_F7__P7,connectivity,theta,F7,P7,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F7--P7,signed debiased squared wPLI,edge
+dwpli2_theta_F7__P8,connectivity,theta,F7,P8,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F7--P8,signed debiased squared wPLI,edge
+dwpli2_theta_F8__T7,connectivity,theta,F8,T7,right_frontal,left_temporal,left_temporal--right_frontal,F8--T7,signed debiased squared wPLI,edge
+dwpli2_theta_F8__T8,connectivity,theta,F8,T8,right_frontal,right_temporal,right_frontal--right_temporal,F8--T8,signed debiased squared wPLI,edge
+dwpli2_theta_F8__P7,connectivity,theta,F8,P7,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F8--P7,signed debiased squared wPLI,edge
+dwpli2_theta_F8__P8,connectivity,theta,F8,P8,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F8--P8,signed debiased squared wPLI,edge
+dwpli2_theta_T7__T8,connectivity,theta,T7,T8,left_temporal,right_temporal,left_temporal--right_temporal,T7--T8,signed debiased squared wPLI,edge
+dwpli2_theta_T7__P7,connectivity,theta,T7,P7,left_temporal,parietal_posterior,left_temporal--parietal_posterior,P7--T7,signed debiased squared wPLI,edge
+dwpli2_theta_T7__P8,connectivity,theta,T7,P8,left_temporal,parietal_posterior,left_temporal--parietal_posterior,P8--T7,signed debiased squared wPLI,edge
+dwpli2_theta_T8__P7,connectivity,theta,T8,P7,right_temporal,parietal_posterior,parietal_posterior--right_temporal,P7--T8,signed debiased squared wPLI,edge
+dwpli2_theta_T8__P8,connectivity,theta,T8,P8,right_temporal,parietal_posterior,parietal_posterior--right_temporal,P8--T8,signed debiased squared wPLI,edge
+dwpli2_theta_P7__P8,connectivity,theta,P7,P8,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P7--P8,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__FP2,connectivity,alpha,FP1,FP2,left_frontal,right_frontal,left_frontal--right_frontal,FP1--FP2,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__F3,connectivity,alpha,FP1,F3,left_frontal,left_frontal,left_frontal--left_frontal,F3--FP1,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__F4,connectivity,alpha,FP1,F4,left_frontal,right_frontal,left_frontal--right_frontal,F4--FP1,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__C3,connectivity,alpha,FP1,C3,left_frontal,central,central--left_frontal,C3--FP1,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__C4,connectivity,alpha,FP1,C4,left_frontal,central,central--left_frontal,C4--FP1,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__P3,connectivity,alpha,FP1,P3,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P3,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__P4,connectivity,alpha,FP1,P4,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P4,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__O1,connectivity,alpha,FP1,O1,left_frontal,occipital,left_frontal--occipital,FP1--O1,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__O2,connectivity,alpha,FP1,O2,left_frontal,occipital,left_frontal--occipital,FP1--O2,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__F7,connectivity,alpha,FP1,F7,left_frontal,left_frontal,left_frontal--left_frontal,F7--FP1,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__F8,connectivity,alpha,FP1,F8,left_frontal,right_frontal,left_frontal--right_frontal,F8--FP1,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__T7,connectivity,alpha,FP1,T7,left_frontal,left_temporal,left_frontal--left_temporal,FP1--T7,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__T8,connectivity,alpha,FP1,T8,left_frontal,right_temporal,left_frontal--right_temporal,FP1--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__P7,connectivity,alpha,FP1,P7,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P7,signed debiased squared wPLI,edge
+dwpli2_alpha_FP1__P8,connectivity,alpha,FP1,P8,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P8,signed debiased squared wPLI,edge
+dwpli2_alpha_FP2__F3,connectivity,alpha,FP2,F3,right_frontal,left_frontal,left_frontal--right_frontal,F3--FP2,signed debiased squared wPLI,edge
+dwpli2_alpha_FP2__F4,connectivity,alpha,FP2,F4,right_frontal,right_frontal,right_frontal--right_frontal,F4--FP2,signed debiased squared wPLI,edge
+dwpli2_alpha_FP2__C3,connectivity,alpha,FP2,C3,right_frontal,central,central--right_frontal,C3--FP2,signed debiased squared wPLI,edge
+dwpli2_alpha_FP2__C4,connectivity,alpha,FP2,C4,right_frontal,central,central--right_frontal,C4--FP2,signed debiased squared wPLI,edge
+dwpli2_alpha_FP2__P3,connectivity,alpha,FP2,P3,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P3,signed debiased squared wPLI,edge
+dwpli2_alpha_FP2__P4,connectivity,alpha,FP2,P4,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P4,signed debiased squared wPLI,edge
+dwpli2_alpha_FP2__O1,connectivity,alpha,FP2,O1,right_frontal,occipital,occipital--right_frontal,FP2--O1,signed debiased squared wPLI,edge
+dwpli2_alpha_FP2__O2,connectivity,alpha,FP2,O2,right_frontal,occipital,occipital--right_frontal,FP2--O2,signed debiased squared wPLI,edge
+dwpli2_alpha_FP2__F7,connectivity,alpha,FP2,F7,right_frontal,left_frontal,left_frontal--right_frontal,F7--FP2,signed debiased squared wPLI,edge
+dwpli2_alpha_FP2__F8,connectivity,alpha,FP2,F8,right_frontal,right_frontal,right_frontal--right_frontal,F8--FP2,signed debiased squared wPLI,edge
+dwpli2_alpha_FP2__T7,connectivity,alpha,FP2,T7,right_frontal,left_temporal,left_temporal--right_frontal,FP2--T7,signed debiased squared wPLI,edge
+dwpli2_alpha_FP2__T8,connectivity,alpha,FP2,T8,right_frontal,right_temporal,right_frontal--right_temporal,FP2--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_FP2__P7,connectivity,alpha,FP2,P7,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P7,signed debiased squared wPLI,edge
+dwpli2_alpha_FP2__P8,connectivity,alpha,FP2,P8,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P8,signed debiased squared wPLI,edge
+dwpli2_alpha_F3__F4,connectivity,alpha,F3,F4,left_frontal,right_frontal,left_frontal--right_frontal,F3--F4,signed debiased squared wPLI,edge
+dwpli2_alpha_F3__C3,connectivity,alpha,F3,C3,left_frontal,central,central--left_frontal,C3--F3,signed debiased squared wPLI,edge
+dwpli2_alpha_F3__C4,connectivity,alpha,F3,C4,left_frontal,central,central--left_frontal,C4--F3,signed debiased squared wPLI,edge
+dwpli2_alpha_F3__P3,connectivity,alpha,F3,P3,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P3,signed debiased squared wPLI,edge
+dwpli2_alpha_F3__P4,connectivity,alpha,F3,P4,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P4,signed debiased squared wPLI,edge
+dwpli2_alpha_F3__O1,connectivity,alpha,F3,O1,left_frontal,occipital,left_frontal--occipital,F3--O1,signed debiased squared wPLI,edge
+dwpli2_alpha_F3__O2,connectivity,alpha,F3,O2,left_frontal,occipital,left_frontal--occipital,F3--O2,signed debiased squared wPLI,edge
+dwpli2_alpha_F3__F7,connectivity,alpha,F3,F7,left_frontal,left_frontal,left_frontal--left_frontal,F3--F7,signed debiased squared wPLI,edge
+dwpli2_alpha_F3__F8,connectivity,alpha,F3,F8,left_frontal,right_frontal,left_frontal--right_frontal,F3--F8,signed debiased squared wPLI,edge
+dwpli2_alpha_F3__T7,connectivity,alpha,F3,T7,left_frontal,left_temporal,left_frontal--left_temporal,F3--T7,signed debiased squared wPLI,edge
+dwpli2_alpha_F3__T8,connectivity,alpha,F3,T8,left_frontal,right_temporal,left_frontal--right_temporal,F3--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_F3__P7,connectivity,alpha,F3,P7,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P7,signed debiased squared wPLI,edge
+dwpli2_alpha_F3__P8,connectivity,alpha,F3,P8,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P8,signed debiased squared wPLI,edge
+dwpli2_alpha_F4__C3,connectivity,alpha,F4,C3,right_frontal,central,central--right_frontal,C3--F4,signed debiased squared wPLI,edge
+dwpli2_alpha_F4__C4,connectivity,alpha,F4,C4,right_frontal,central,central--right_frontal,C4--F4,signed debiased squared wPLI,edge
+dwpli2_alpha_F4__P3,connectivity,alpha,F4,P3,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P3,signed debiased squared wPLI,edge
+dwpli2_alpha_F4__P4,connectivity,alpha,F4,P4,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P4,signed debiased squared wPLI,edge
+dwpli2_alpha_F4__O1,connectivity,alpha,F4,O1,right_frontal,occipital,occipital--right_frontal,F4--O1,signed debiased squared wPLI,edge
+dwpli2_alpha_F4__O2,connectivity,alpha,F4,O2,right_frontal,occipital,occipital--right_frontal,F4--O2,signed debiased squared wPLI,edge
+dwpli2_alpha_F4__F7,connectivity,alpha,F4,F7,right_frontal,left_frontal,left_frontal--right_frontal,F4--F7,signed debiased squared wPLI,edge
+dwpli2_alpha_F4__F8,connectivity,alpha,F4,F8,right_frontal,right_frontal,right_frontal--right_frontal,F4--F8,signed debiased squared wPLI,edge
+dwpli2_alpha_F4__T7,connectivity,alpha,F4,T7,right_frontal,left_temporal,left_temporal--right_frontal,F4--T7,signed debiased squared wPLI,edge
+dwpli2_alpha_F4__T8,connectivity,alpha,F4,T8,right_frontal,right_temporal,right_frontal--right_temporal,F4--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_F4__P7,connectivity,alpha,F4,P7,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P7,signed debiased squared wPLI,edge
+dwpli2_alpha_F4__P8,connectivity,alpha,F4,P8,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P8,signed debiased squared wPLI,edge
+dwpli2_alpha_C3__C4,connectivity,alpha,C3,C4,central,central,central--central,C3--C4,signed debiased squared wPLI,edge
+dwpli2_alpha_C3__P3,connectivity,alpha,C3,P3,central,parietal_posterior,central--parietal_posterior,C3--P3,signed debiased squared wPLI,edge
+dwpli2_alpha_C3__P4,connectivity,alpha,C3,P4,central,parietal_posterior,central--parietal_posterior,C3--P4,signed debiased squared wPLI,edge
+dwpli2_alpha_C3__O1,connectivity,alpha,C3,O1,central,occipital,central--occipital,C3--O1,signed debiased squared wPLI,edge
+dwpli2_alpha_C3__O2,connectivity,alpha,C3,O2,central,occipital,central--occipital,C3--O2,signed debiased squared wPLI,edge
+dwpli2_alpha_C3__F7,connectivity,alpha,C3,F7,central,left_frontal,central--left_frontal,C3--F7,signed debiased squared wPLI,edge
+dwpli2_alpha_C3__F8,connectivity,alpha,C3,F8,central,right_frontal,central--right_frontal,C3--F8,signed debiased squared wPLI,edge
+dwpli2_alpha_C3__T7,connectivity,alpha,C3,T7,central,left_temporal,central--left_temporal,C3--T7,signed debiased squared wPLI,edge
+dwpli2_alpha_C3__T8,connectivity,alpha,C3,T8,central,right_temporal,central--right_temporal,C3--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_C3__P7,connectivity,alpha,C3,P7,central,parietal_posterior,central--parietal_posterior,C3--P7,signed debiased squared wPLI,edge
+dwpli2_alpha_C3__P8,connectivity,alpha,C3,P8,central,parietal_posterior,central--parietal_posterior,C3--P8,signed debiased squared wPLI,edge
+dwpli2_alpha_C4__P3,connectivity,alpha,C4,P3,central,parietal_posterior,central--parietal_posterior,C4--P3,signed debiased squared wPLI,edge
+dwpli2_alpha_C4__P4,connectivity,alpha,C4,P4,central,parietal_posterior,central--parietal_posterior,C4--P4,signed debiased squared wPLI,edge
+dwpli2_alpha_C4__O1,connectivity,alpha,C4,O1,central,occipital,central--occipital,C4--O1,signed debiased squared wPLI,edge
+dwpli2_alpha_C4__O2,connectivity,alpha,C4,O2,central,occipital,central--occipital,C4--O2,signed debiased squared wPLI,edge
+dwpli2_alpha_C4__F7,connectivity,alpha,C4,F7,central,left_frontal,central--left_frontal,C4--F7,signed debiased squared wPLI,edge
+dwpli2_alpha_C4__F8,connectivity,alpha,C4,F8,central,right_frontal,central--right_frontal,C4--F8,signed debiased squared wPLI,edge
+dwpli2_alpha_C4__T7,connectivity,alpha,C4,T7,central,left_temporal,central--left_temporal,C4--T7,signed debiased squared wPLI,edge
+dwpli2_alpha_C4__T8,connectivity,alpha,C4,T8,central,right_temporal,central--right_temporal,C4--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_C4__P7,connectivity,alpha,C4,P7,central,parietal_posterior,central--parietal_posterior,C4--P7,signed debiased squared wPLI,edge
+dwpli2_alpha_C4__P8,connectivity,alpha,C4,P8,central,parietal_posterior,central--parietal_posterior,C4--P8,signed debiased squared wPLI,edge
+dwpli2_alpha_P3__P4,connectivity,alpha,P3,P4,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P3--P4,signed debiased squared wPLI,edge
+dwpli2_alpha_P3__O1,connectivity,alpha,P3,O1,parietal_posterior,occipital,occipital--parietal_posterior,O1--P3,signed debiased squared wPLI,edge
+dwpli2_alpha_P3__O2,connectivity,alpha,P3,O2,parietal_posterior,occipital,occipital--parietal_posterior,O2--P3,signed debiased squared wPLI,edge
+dwpli2_alpha_P3__F7,connectivity,alpha,P3,F7,parietal_posterior,left_frontal,left_frontal--parietal_posterior,F7--P3,signed debiased squared wPLI,edge
+dwpli2_alpha_P3__F8,connectivity,alpha,P3,F8,parietal_posterior,right_frontal,parietal_posterior--right_frontal,F8--P3,signed debiased squared wPLI,edge
+dwpli2_alpha_P3__T7,connectivity,alpha,P3,T7,parietal_posterior,left_temporal,left_temporal--parietal_posterior,P3--T7,signed debiased squared wPLI,edge
+dwpli2_alpha_P3__T8,connectivity,alpha,P3,T8,parietal_posterior,right_temporal,parietal_posterior--right_temporal,P3--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_P3__P7,connectivity,alpha,P3,P7,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P3--P7,signed debiased squared wPLI,edge
+dwpli2_alpha_P3__P8,connectivity,alpha,P3,P8,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P3--P8,signed debiased squared wPLI,edge
+dwpli2_alpha_P4__O1,connectivity,alpha,P4,O1,parietal_posterior,occipital,occipital--parietal_posterior,O1--P4,signed debiased squared wPLI,edge
+dwpli2_alpha_P4__O2,connectivity,alpha,P4,O2,parietal_posterior,occipital,occipital--parietal_posterior,O2--P4,signed debiased squared wPLI,edge
+dwpli2_alpha_P4__F7,connectivity,alpha,P4,F7,parietal_posterior,left_frontal,left_frontal--parietal_posterior,F7--P4,signed debiased squared wPLI,edge
+dwpli2_alpha_P4__F8,connectivity,alpha,P4,F8,parietal_posterior,right_frontal,parietal_posterior--right_frontal,F8--P4,signed debiased squared wPLI,edge
+dwpli2_alpha_P4__T7,connectivity,alpha,P4,T7,parietal_posterior,left_temporal,left_temporal--parietal_posterior,P4--T7,signed debiased squared wPLI,edge
+dwpli2_alpha_P4__T8,connectivity,alpha,P4,T8,parietal_posterior,right_temporal,parietal_posterior--right_temporal,P4--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_P4__P7,connectivity,alpha,P4,P7,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P4--P7,signed debiased squared wPLI,edge
+dwpli2_alpha_P4__P8,connectivity,alpha,P4,P8,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P4--P8,signed debiased squared wPLI,edge
+dwpli2_alpha_O1__O2,connectivity,alpha,O1,O2,occipital,occipital,occipital--occipital,O1--O2,signed debiased squared wPLI,edge
+dwpli2_alpha_O1__F7,connectivity,alpha,O1,F7,occipital,left_frontal,left_frontal--occipital,F7--O1,signed debiased squared wPLI,edge
+dwpli2_alpha_O1__F8,connectivity,alpha,O1,F8,occipital,right_frontal,occipital--right_frontal,F8--O1,signed debiased squared wPLI,edge
+dwpli2_alpha_O1__T7,connectivity,alpha,O1,T7,occipital,left_temporal,left_temporal--occipital,O1--T7,signed debiased squared wPLI,edge
+dwpli2_alpha_O1__T8,connectivity,alpha,O1,T8,occipital,right_temporal,occipital--right_temporal,O1--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_O1__P7,connectivity,alpha,O1,P7,occipital,parietal_posterior,occipital--parietal_posterior,O1--P7,signed debiased squared wPLI,edge
+dwpli2_alpha_O1__P8,connectivity,alpha,O1,P8,occipital,parietal_posterior,occipital--parietal_posterior,O1--P8,signed debiased squared wPLI,edge
+dwpli2_alpha_O2__F7,connectivity,alpha,O2,F7,occipital,left_frontal,left_frontal--occipital,F7--O2,signed debiased squared wPLI,edge
+dwpli2_alpha_O2__F8,connectivity,alpha,O2,F8,occipital,right_frontal,occipital--right_frontal,F8--O2,signed debiased squared wPLI,edge
+dwpli2_alpha_O2__T7,connectivity,alpha,O2,T7,occipital,left_temporal,left_temporal--occipital,O2--T7,signed debiased squared wPLI,edge
+dwpli2_alpha_O2__T8,connectivity,alpha,O2,T8,occipital,right_temporal,occipital--right_temporal,O2--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_O2__P7,connectivity,alpha,O2,P7,occipital,parietal_posterior,occipital--parietal_posterior,O2--P7,signed debiased squared wPLI,edge
+dwpli2_alpha_O2__P8,connectivity,alpha,O2,P8,occipital,parietal_posterior,occipital--parietal_posterior,O2--P8,signed debiased squared wPLI,edge
+dwpli2_alpha_F7__F8,connectivity,alpha,F7,F8,left_frontal,right_frontal,left_frontal--right_frontal,F7--F8,signed debiased squared wPLI,edge
+dwpli2_alpha_F7__T7,connectivity,alpha,F7,T7,left_frontal,left_temporal,left_frontal--left_temporal,F7--T7,signed debiased squared wPLI,edge
+dwpli2_alpha_F7__T8,connectivity,alpha,F7,T8,left_frontal,right_temporal,left_frontal--right_temporal,F7--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_F7__P7,connectivity,alpha,F7,P7,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F7--P7,signed debiased squared wPLI,edge
+dwpli2_alpha_F7__P8,connectivity,alpha,F7,P8,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F7--P8,signed debiased squared wPLI,edge
+dwpli2_alpha_F8__T7,connectivity,alpha,F8,T7,right_frontal,left_temporal,left_temporal--right_frontal,F8--T7,signed debiased squared wPLI,edge
+dwpli2_alpha_F8__T8,connectivity,alpha,F8,T8,right_frontal,right_temporal,right_frontal--right_temporal,F8--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_F8__P7,connectivity,alpha,F8,P7,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F8--P7,signed debiased squared wPLI,edge
+dwpli2_alpha_F8__P8,connectivity,alpha,F8,P8,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F8--P8,signed debiased squared wPLI,edge
+dwpli2_alpha_T7__T8,connectivity,alpha,T7,T8,left_temporal,right_temporal,left_temporal--right_temporal,T7--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_T7__P7,connectivity,alpha,T7,P7,left_temporal,parietal_posterior,left_temporal--parietal_posterior,P7--T7,signed debiased squared wPLI,edge
+dwpli2_alpha_T7__P8,connectivity,alpha,T7,P8,left_temporal,parietal_posterior,left_temporal--parietal_posterior,P8--T7,signed debiased squared wPLI,edge
+dwpli2_alpha_T8__P7,connectivity,alpha,T8,P7,right_temporal,parietal_posterior,parietal_posterior--right_temporal,P7--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_T8__P8,connectivity,alpha,T8,P8,right_temporal,parietal_posterior,parietal_posterior--right_temporal,P8--T8,signed debiased squared wPLI,edge
+dwpli2_alpha_P7__P8,connectivity,alpha,P7,P8,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P7--P8,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__FP2,connectivity,beta,FP1,FP2,left_frontal,right_frontal,left_frontal--right_frontal,FP1--FP2,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__F3,connectivity,beta,FP1,F3,left_frontal,left_frontal,left_frontal--left_frontal,F3--FP1,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__F4,connectivity,beta,FP1,F4,left_frontal,right_frontal,left_frontal--right_frontal,F4--FP1,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__C3,connectivity,beta,FP1,C3,left_frontal,central,central--left_frontal,C3--FP1,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__C4,connectivity,beta,FP1,C4,left_frontal,central,central--left_frontal,C4--FP1,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__P3,connectivity,beta,FP1,P3,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P3,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__P4,connectivity,beta,FP1,P4,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P4,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__O1,connectivity,beta,FP1,O1,left_frontal,occipital,left_frontal--occipital,FP1--O1,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__O2,connectivity,beta,FP1,O2,left_frontal,occipital,left_frontal--occipital,FP1--O2,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__F7,connectivity,beta,FP1,F7,left_frontal,left_frontal,left_frontal--left_frontal,F7--FP1,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__F8,connectivity,beta,FP1,F8,left_frontal,right_frontal,left_frontal--right_frontal,F8--FP1,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__T7,connectivity,beta,FP1,T7,left_frontal,left_temporal,left_frontal--left_temporal,FP1--T7,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__T8,connectivity,beta,FP1,T8,left_frontal,right_temporal,left_frontal--right_temporal,FP1--T8,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__P7,connectivity,beta,FP1,P7,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P7,signed debiased squared wPLI,edge
+dwpli2_beta_FP1__P8,connectivity,beta,FP1,P8,left_frontal,parietal_posterior,left_frontal--parietal_posterior,FP1--P8,signed debiased squared wPLI,edge
+dwpli2_beta_FP2__F3,connectivity,beta,FP2,F3,right_frontal,left_frontal,left_frontal--right_frontal,F3--FP2,signed debiased squared wPLI,edge
+dwpli2_beta_FP2__F4,connectivity,beta,FP2,F4,right_frontal,right_frontal,right_frontal--right_frontal,F4--FP2,signed debiased squared wPLI,edge
+dwpli2_beta_FP2__C3,connectivity,beta,FP2,C3,right_frontal,central,central--right_frontal,C3--FP2,signed debiased squared wPLI,edge
+dwpli2_beta_FP2__C4,connectivity,beta,FP2,C4,right_frontal,central,central--right_frontal,C4--FP2,signed debiased squared wPLI,edge
+dwpli2_beta_FP2__P3,connectivity,beta,FP2,P3,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P3,signed debiased squared wPLI,edge
+dwpli2_beta_FP2__P4,connectivity,beta,FP2,P4,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P4,signed debiased squared wPLI,edge
+dwpli2_beta_FP2__O1,connectivity,beta,FP2,O1,right_frontal,occipital,occipital--right_frontal,FP2--O1,signed debiased squared wPLI,edge
+dwpli2_beta_FP2__O2,connectivity,beta,FP2,O2,right_frontal,occipital,occipital--right_frontal,FP2--O2,signed debiased squared wPLI,edge
+dwpli2_beta_FP2__F7,connectivity,beta,FP2,F7,right_frontal,left_frontal,left_frontal--right_frontal,F7--FP2,signed debiased squared wPLI,edge
+dwpli2_beta_FP2__F8,connectivity,beta,FP2,F8,right_frontal,right_frontal,right_frontal--right_frontal,F8--FP2,signed debiased squared wPLI,edge
+dwpli2_beta_FP2__T7,connectivity,beta,FP2,T7,right_frontal,left_temporal,left_temporal--right_frontal,FP2--T7,signed debiased squared wPLI,edge
+dwpli2_beta_FP2__T8,connectivity,beta,FP2,T8,right_frontal,right_temporal,right_frontal--right_temporal,FP2--T8,signed debiased squared wPLI,edge
+dwpli2_beta_FP2__P7,connectivity,beta,FP2,P7,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P7,signed debiased squared wPLI,edge
+dwpli2_beta_FP2__P8,connectivity,beta,FP2,P8,right_frontal,parietal_posterior,parietal_posterior--right_frontal,FP2--P8,signed debiased squared wPLI,edge
+dwpli2_beta_F3__F4,connectivity,beta,F3,F4,left_frontal,right_frontal,left_frontal--right_frontal,F3--F4,signed debiased squared wPLI,edge
+dwpli2_beta_F3__C3,connectivity,beta,F3,C3,left_frontal,central,central--left_frontal,C3--F3,signed debiased squared wPLI,edge
+dwpli2_beta_F3__C4,connectivity,beta,F3,C4,left_frontal,central,central--left_frontal,C4--F3,signed debiased squared wPLI,edge
+dwpli2_beta_F3__P3,connectivity,beta,F3,P3,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P3,signed debiased squared wPLI,edge
+dwpli2_beta_F3__P4,connectivity,beta,F3,P4,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P4,signed debiased squared wPLI,edge
+dwpli2_beta_F3__O1,connectivity,beta,F3,O1,left_frontal,occipital,left_frontal--occipital,F3--O1,signed debiased squared wPLI,edge
+dwpli2_beta_F3__O2,connectivity,beta,F3,O2,left_frontal,occipital,left_frontal--occipital,F3--O2,signed debiased squared wPLI,edge
+dwpli2_beta_F3__F7,connectivity,beta,F3,F7,left_frontal,left_frontal,left_frontal--left_frontal,F3--F7,signed debiased squared wPLI,edge
+dwpli2_beta_F3__F8,connectivity,beta,F3,F8,left_frontal,right_frontal,left_frontal--right_frontal,F3--F8,signed debiased squared wPLI,edge
+dwpli2_beta_F3__T7,connectivity,beta,F3,T7,left_frontal,left_temporal,left_frontal--left_temporal,F3--T7,signed debiased squared wPLI,edge
+dwpli2_beta_F3__T8,connectivity,beta,F3,T8,left_frontal,right_temporal,left_frontal--right_temporal,F3--T8,signed debiased squared wPLI,edge
+dwpli2_beta_F3__P7,connectivity,beta,F3,P7,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P7,signed debiased squared wPLI,edge
+dwpli2_beta_F3__P8,connectivity,beta,F3,P8,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F3--P8,signed debiased squared wPLI,edge
+dwpli2_beta_F4__C3,connectivity,beta,F4,C3,right_frontal,central,central--right_frontal,C3--F4,signed debiased squared wPLI,edge
+dwpli2_beta_F4__C4,connectivity,beta,F4,C4,right_frontal,central,central--right_frontal,C4--F4,signed debiased squared wPLI,edge
+dwpli2_beta_F4__P3,connectivity,beta,F4,P3,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P3,signed debiased squared wPLI,edge
+dwpli2_beta_F4__P4,connectivity,beta,F4,P4,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P4,signed debiased squared wPLI,edge
+dwpli2_beta_F4__O1,connectivity,beta,F4,O1,right_frontal,occipital,occipital--right_frontal,F4--O1,signed debiased squared wPLI,edge
+dwpli2_beta_F4__O2,connectivity,beta,F4,O2,right_frontal,occipital,occipital--right_frontal,F4--O2,signed debiased squared wPLI,edge
+dwpli2_beta_F4__F7,connectivity,beta,F4,F7,right_frontal,left_frontal,left_frontal--right_frontal,F4--F7,signed debiased squared wPLI,edge
+dwpli2_beta_F4__F8,connectivity,beta,F4,F8,right_frontal,right_frontal,right_frontal--right_frontal,F4--F8,signed debiased squared wPLI,edge
+dwpli2_beta_F4__T7,connectivity,beta,F4,T7,right_frontal,left_temporal,left_temporal--right_frontal,F4--T7,signed debiased squared wPLI,edge
+dwpli2_beta_F4__T8,connectivity,beta,F4,T8,right_frontal,right_temporal,right_frontal--right_temporal,F4--T8,signed debiased squared wPLI,edge
+dwpli2_beta_F4__P7,connectivity,beta,F4,P7,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P7,signed debiased squared wPLI,edge
+dwpli2_beta_F4__P8,connectivity,beta,F4,P8,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F4--P8,signed debiased squared wPLI,edge
+dwpli2_beta_C3__C4,connectivity,beta,C3,C4,central,central,central--central,C3--C4,signed debiased squared wPLI,edge
+dwpli2_beta_C3__P3,connectivity,beta,C3,P3,central,parietal_posterior,central--parietal_posterior,C3--P3,signed debiased squared wPLI,edge
+dwpli2_beta_C3__P4,connectivity,beta,C3,P4,central,parietal_posterior,central--parietal_posterior,C3--P4,signed debiased squared wPLI,edge
+dwpli2_beta_C3__O1,connectivity,beta,C3,O1,central,occipital,central--occipital,C3--O1,signed debiased squared wPLI,edge
+dwpli2_beta_C3__O2,connectivity,beta,C3,O2,central,occipital,central--occipital,C3--O2,signed debiased squared wPLI,edge
+dwpli2_beta_C3__F7,connectivity,beta,C3,F7,central,left_frontal,central--left_frontal,C3--F7,signed debiased squared wPLI,edge
+dwpli2_beta_C3__F8,connectivity,beta,C3,F8,central,right_frontal,central--right_frontal,C3--F8,signed debiased squared wPLI,edge
+dwpli2_beta_C3__T7,connectivity,beta,C3,T7,central,left_temporal,central--left_temporal,C3--T7,signed debiased squared wPLI,edge
+dwpli2_beta_C3__T8,connectivity,beta,C3,T8,central,right_temporal,central--right_temporal,C3--T8,signed debiased squared wPLI,edge
+dwpli2_beta_C3__P7,connectivity,beta,C3,P7,central,parietal_posterior,central--parietal_posterior,C3--P7,signed debiased squared wPLI,edge
+dwpli2_beta_C3__P8,connectivity,beta,C3,P8,central,parietal_posterior,central--parietal_posterior,C3--P8,signed debiased squared wPLI,edge
+dwpli2_beta_C4__P3,connectivity,beta,C4,P3,central,parietal_posterior,central--parietal_posterior,C4--P3,signed debiased squared wPLI,edge
+dwpli2_beta_C4__P4,connectivity,beta,C4,P4,central,parietal_posterior,central--parietal_posterior,C4--P4,signed debiased squared wPLI,edge
+dwpli2_beta_C4__O1,connectivity,beta,C4,O1,central,occipital,central--occipital,C4--O1,signed debiased squared wPLI,edge
+dwpli2_beta_C4__O2,connectivity,beta,C4,O2,central,occipital,central--occipital,C4--O2,signed debiased squared wPLI,edge
+dwpli2_beta_C4__F7,connectivity,beta,C4,F7,central,left_frontal,central--left_frontal,C4--F7,signed debiased squared wPLI,edge
+dwpli2_beta_C4__F8,connectivity,beta,C4,F8,central,right_frontal,central--right_frontal,C4--F8,signed debiased squared wPLI,edge
+dwpli2_beta_C4__T7,connectivity,beta,C4,T7,central,left_temporal,central--left_temporal,C4--T7,signed debiased squared wPLI,edge
+dwpli2_beta_C4__T8,connectivity,beta,C4,T8,central,right_temporal,central--right_temporal,C4--T8,signed debiased squared wPLI,edge
+dwpli2_beta_C4__P7,connectivity,beta,C4,P7,central,parietal_posterior,central--parietal_posterior,C4--P7,signed debiased squared wPLI,edge
+dwpli2_beta_C4__P8,connectivity,beta,C4,P8,central,parietal_posterior,central--parietal_posterior,C4--P8,signed debiased squared wPLI,edge
+dwpli2_beta_P3__P4,connectivity,beta,P3,P4,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P3--P4,signed debiased squared wPLI,edge
+dwpli2_beta_P3__O1,connectivity,beta,P3,O1,parietal_posterior,occipital,occipital--parietal_posterior,O1--P3,signed debiased squared wPLI,edge
+dwpli2_beta_P3__O2,connectivity,beta,P3,O2,parietal_posterior,occipital,occipital--parietal_posterior,O2--P3,signed debiased squared wPLI,edge
+dwpli2_beta_P3__F7,connectivity,beta,P3,F7,parietal_posterior,left_frontal,left_frontal--parietal_posterior,F7--P3,signed debiased squared wPLI,edge
+dwpli2_beta_P3__F8,connectivity,beta,P3,F8,parietal_posterior,right_frontal,parietal_posterior--right_frontal,F8--P3,signed debiased squared wPLI,edge
+dwpli2_beta_P3__T7,connectivity,beta,P3,T7,parietal_posterior,left_temporal,left_temporal--parietal_posterior,P3--T7,signed debiased squared wPLI,edge
+dwpli2_beta_P3__T8,connectivity,beta,P3,T8,parietal_posterior,right_temporal,parietal_posterior--right_temporal,P3--T8,signed debiased squared wPLI,edge
+dwpli2_beta_P3__P7,connectivity,beta,P3,P7,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P3--P7,signed debiased squared wPLI,edge
+dwpli2_beta_P3__P8,connectivity,beta,P3,P8,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P3--P8,signed debiased squared wPLI,edge
+dwpli2_beta_P4__O1,connectivity,beta,P4,O1,parietal_posterior,occipital,occipital--parietal_posterior,O1--P4,signed debiased squared wPLI,edge
+dwpli2_beta_P4__O2,connectivity,beta,P4,O2,parietal_posterior,occipital,occipital--parietal_posterior,O2--P4,signed debiased squared wPLI,edge
+dwpli2_beta_P4__F7,connectivity,beta,P4,F7,parietal_posterior,left_frontal,left_frontal--parietal_posterior,F7--P4,signed debiased squared wPLI,edge
+dwpli2_beta_P4__F8,connectivity,beta,P4,F8,parietal_posterior,right_frontal,parietal_posterior--right_frontal,F8--P4,signed debiased squared wPLI,edge
+dwpli2_beta_P4__T7,connectivity,beta,P4,T7,parietal_posterior,left_temporal,left_temporal--parietal_posterior,P4--T7,signed debiased squared wPLI,edge
+dwpli2_beta_P4__T8,connectivity,beta,P4,T8,parietal_posterior,right_temporal,parietal_posterior--right_temporal,P4--T8,signed debiased squared wPLI,edge
+dwpli2_beta_P4__P7,connectivity,beta,P4,P7,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P4--P7,signed debiased squared wPLI,edge
+dwpli2_beta_P4__P8,connectivity,beta,P4,P8,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P4--P8,signed debiased squared wPLI,edge
+dwpli2_beta_O1__O2,connectivity,beta,O1,O2,occipital,occipital,occipital--occipital,O1--O2,signed debiased squared wPLI,edge
+dwpli2_beta_O1__F7,connectivity,beta,O1,F7,occipital,left_frontal,left_frontal--occipital,F7--O1,signed debiased squared wPLI,edge
+dwpli2_beta_O1__F8,connectivity,beta,O1,F8,occipital,right_frontal,occipital--right_frontal,F8--O1,signed debiased squared wPLI,edge
+dwpli2_beta_O1__T7,connectivity,beta,O1,T7,occipital,left_temporal,left_temporal--occipital,O1--T7,signed debiased squared wPLI,edge
+dwpli2_beta_O1__T8,connectivity,beta,O1,T8,occipital,right_temporal,occipital--right_temporal,O1--T8,signed debiased squared wPLI,edge
+dwpli2_beta_O1__P7,connectivity,beta,O1,P7,occipital,parietal_posterior,occipital--parietal_posterior,O1--P7,signed debiased squared wPLI,edge
+dwpli2_beta_O1__P8,connectivity,beta,O1,P8,occipital,parietal_posterior,occipital--parietal_posterior,O1--P8,signed debiased squared wPLI,edge
+dwpli2_beta_O2__F7,connectivity,beta,O2,F7,occipital,left_frontal,left_frontal--occipital,F7--O2,signed debiased squared wPLI,edge
+dwpli2_beta_O2__F8,connectivity,beta,O2,F8,occipital,right_frontal,occipital--right_frontal,F8--O2,signed debiased squared wPLI,edge
+dwpli2_beta_O2__T7,connectivity,beta,O2,T7,occipital,left_temporal,left_temporal--occipital,O2--T7,signed debiased squared wPLI,edge
+dwpli2_beta_O2__T8,connectivity,beta,O2,T8,occipital,right_temporal,occipital--right_temporal,O2--T8,signed debiased squared wPLI,edge
+dwpli2_beta_O2__P7,connectivity,beta,O2,P7,occipital,parietal_posterior,occipital--parietal_posterior,O2--P7,signed debiased squared wPLI,edge
+dwpli2_beta_O2__P8,connectivity,beta,O2,P8,occipital,parietal_posterior,occipital--parietal_posterior,O2--P8,signed debiased squared wPLI,edge
+dwpli2_beta_F7__F8,connectivity,beta,F7,F8,left_frontal,right_frontal,left_frontal--right_frontal,F7--F8,signed debiased squared wPLI,edge
+dwpli2_beta_F7__T7,connectivity,beta,F7,T7,left_frontal,left_temporal,left_frontal--left_temporal,F7--T7,signed debiased squared wPLI,edge
+dwpli2_beta_F7__T8,connectivity,beta,F7,T8,left_frontal,right_temporal,left_frontal--right_temporal,F7--T8,signed debiased squared wPLI,edge
+dwpli2_beta_F7__P7,connectivity,beta,F7,P7,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F7--P7,signed debiased squared wPLI,edge
+dwpli2_beta_F7__P8,connectivity,beta,F7,P8,left_frontal,parietal_posterior,left_frontal--parietal_posterior,F7--P8,signed debiased squared wPLI,edge
+dwpli2_beta_F8__T7,connectivity,beta,F8,T7,right_frontal,left_temporal,left_temporal--right_frontal,F8--T7,signed debiased squared wPLI,edge
+dwpli2_beta_F8__T8,connectivity,beta,F8,T8,right_frontal,right_temporal,right_frontal--right_temporal,F8--T8,signed debiased squared wPLI,edge
+dwpli2_beta_F8__P7,connectivity,beta,F8,P7,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F8--P7,signed debiased squared wPLI,edge
+dwpli2_beta_F8__P8,connectivity,beta,F8,P8,right_frontal,parietal_posterior,parietal_posterior--right_frontal,F8--P8,signed debiased squared wPLI,edge
+dwpli2_beta_T7__T8,connectivity,beta,T7,T8,left_temporal,right_temporal,left_temporal--right_temporal,T7--T8,signed debiased squared wPLI,edge
+dwpli2_beta_T7__P7,connectivity,beta,T7,P7,left_temporal,parietal_posterior,left_temporal--parietal_posterior,P7--T7,signed debiased squared wPLI,edge
+dwpli2_beta_T7__P8,connectivity,beta,T7,P8,left_temporal,parietal_posterior,left_temporal--parietal_posterior,P8--T7,signed debiased squared wPLI,edge
+dwpli2_beta_T8__P7,connectivity,beta,T8,P7,right_temporal,parietal_posterior,parietal_posterior--right_temporal,P7--T8,signed debiased squared wPLI,edge
+dwpli2_beta_T8__P8,connectivity,beta,T8,P8,right_temporal,parietal_posterior,parietal_posterior--right_temporal,P8--T8,signed debiased squared wPLI,edge
+dwpli2_beta_P7__P8,connectivity,beta,P7,P8,parietal_posterior,parietal_posterior,parietal_posterior--parietal_posterior,P7--P8,signed debiased squared wPLI,edge
+hjorth_complexity_broad_FP1,Hjorth_complexity,broad,FP1,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_FP2,Hjorth_complexity,broad,FP2,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_F3,Hjorth_complexity,broad,F3,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_F4,Hjorth_complexity,broad,F4,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_C3,Hjorth_complexity,broad,C3,,central,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_C4,Hjorth_complexity,broad,C4,,central,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_P3,Hjorth_complexity,broad,P3,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_P4,Hjorth_complexity,broad,P4,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_O1,Hjorth_complexity,broad,O1,,occipital,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_O2,Hjorth_complexity,broad,O2,,occipital,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_F7,Hjorth_complexity,broad,F7,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_F8,Hjorth_complexity,broad,F8,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_T7,Hjorth_complexity,broad,T7,,left_temporal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_T8,Hjorth_complexity,broad,T8,,right_temporal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_P7,Hjorth_complexity,broad,P7,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_broad_P8,Hjorth_complexity,broad,P8,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_FP1,Hjorth_complexity,delta,FP1,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_FP2,Hjorth_complexity,delta,FP2,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_F3,Hjorth_complexity,delta,F3,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_F4,Hjorth_complexity,delta,F4,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_C3,Hjorth_complexity,delta,C3,,central,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_C4,Hjorth_complexity,delta,C4,,central,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_P3,Hjorth_complexity,delta,P3,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_P4,Hjorth_complexity,delta,P4,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_O1,Hjorth_complexity,delta,O1,,occipital,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_O2,Hjorth_complexity,delta,O2,,occipital,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_F7,Hjorth_complexity,delta,F7,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_F8,Hjorth_complexity,delta,F8,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_T7,Hjorth_complexity,delta,T7,,left_temporal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_T8,Hjorth_complexity,delta,T8,,right_temporal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_P7,Hjorth_complexity,delta,P7,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_delta_P8,Hjorth_complexity,delta,P8,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_FP1,Hjorth_complexity,theta,FP1,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_FP2,Hjorth_complexity,theta,FP2,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_F3,Hjorth_complexity,theta,F3,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_F4,Hjorth_complexity,theta,F4,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_C3,Hjorth_complexity,theta,C3,,central,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_C4,Hjorth_complexity,theta,C4,,central,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_P3,Hjorth_complexity,theta,P3,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_P4,Hjorth_complexity,theta,P4,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_O1,Hjorth_complexity,theta,O1,,occipital,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_O2,Hjorth_complexity,theta,O2,,occipital,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_F7,Hjorth_complexity,theta,F7,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_F8,Hjorth_complexity,theta,F8,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_T7,Hjorth_complexity,theta,T7,,left_temporal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_T8,Hjorth_complexity,theta,T8,,right_temporal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_P7,Hjorth_complexity,theta,P7,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_theta_P8,Hjorth_complexity,theta,P8,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_FP1,Hjorth_complexity,alpha,FP1,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_FP2,Hjorth_complexity,alpha,FP2,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_F3,Hjorth_complexity,alpha,F3,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_F4,Hjorth_complexity,alpha,F4,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_C3,Hjorth_complexity,alpha,C3,,central,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_C4,Hjorth_complexity,alpha,C4,,central,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_P3,Hjorth_complexity,alpha,P3,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_P4,Hjorth_complexity,alpha,P4,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_O1,Hjorth_complexity,alpha,O1,,occipital,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_O2,Hjorth_complexity,alpha,O2,,occipital,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_F7,Hjorth_complexity,alpha,F7,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_F8,Hjorth_complexity,alpha,F8,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_T7,Hjorth_complexity,alpha,T7,,left_temporal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_T8,Hjorth_complexity,alpha,T8,,right_temporal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_P7,Hjorth_complexity,alpha,P7,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_alpha_P8,Hjorth_complexity,alpha,P8,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_FP1,Hjorth_complexity,beta,FP1,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_FP2,Hjorth_complexity,beta,FP2,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_F3,Hjorth_complexity,beta,F3,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_F4,Hjorth_complexity,beta,F4,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_C3,Hjorth_complexity,beta,C3,,central,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_C4,Hjorth_complexity,beta,C4,,central,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_P3,Hjorth_complexity,beta,P3,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_P4,Hjorth_complexity,beta,P4,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_O1,Hjorth_complexity,beta,O1,,occipital,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_O2,Hjorth_complexity,beta,O2,,occipital,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_F7,Hjorth_complexity,beta,F7,,left_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_F8,Hjorth_complexity,beta,F8,,right_frontal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_T7,Hjorth_complexity,beta,T7,,left_temporal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_T8,Hjorth_complexity,beta,T8,,right_temporal,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_P7,Hjorth_complexity,beta,P7,,parietal_posterior,,,,dimensionless Hjorth complexity,node
+hjorth_complexity_beta_P8,Hjorth_complexity,beta,P8,,parietal_posterior,,,,dimensionless Hjorth complexity,node

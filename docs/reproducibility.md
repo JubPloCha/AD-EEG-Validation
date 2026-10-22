@@ -1,0 +1,78 @@
+# Reproducibility and input contract
+
+## Scope and environment
+
+The release retains the validated final feature and modeling modules byte-for-byte. Only input/path adapters, runtime iteration, reporting and packaging were made portable. Mathematical interpretation functions were compared by Python AST; private original predictions were checked with the released inference code. No private history, models or results are included.
+
+Tested: Python **3.12.3**, NumPy 2.4.4, SciPy 1.17.1, pandas 3.0.2, h5py 3.16.0, scikit-learn 1.8.0, statsmodels 0.14.6, threadpoolctl 3.6.0. Exact pins are in `requirements-tested.txt`. Thread pools are limited to one by the CLI. This is the project's required subset, not an environment-wide freeze. MATLAB queried locally: **R2024b, 24.2.0.2712019**. Preserved read-comparison metadata records **EEGLAB 2026.0.0**. REST plugin version and the complete historical preprocessing command chain are not recoverable from the final project; they are not invented. MATLAB/EEGLAB/REST are not bundled or required for the feature-table route.
+
+## Tables and paths
+
+Metadata CSV/TSV: `subject_id,group,age,sex`, optionally `mmse,education_years,set_path,eeg_valid`. Female=0, male=1; AD is positive (1), NC negative (0). Classification never filters on MMSE. Missing age/sex, invalid diagnostic identity or invalid EEG excludes a training subject, with a reason retained in `private/development/all_subjects.csv`. Ages are not imputed. Missing numeric EEG cells may be imputed by training-fold medians; an entirely invalid row is not an EEG-valid participant. Raw clinical Excel linkage is not automated: produce the normalized metadata table using your authorized identity key first. The package performs an explicit unique-ID join, not fuzzy name matching.
+
+Feature CSV: `subject_id` followed by **exactly** `configs/feature_schema.json:feature_order`. Rows may be in a different order than metadata; they are explicitly aligned by ID. Unexpected/missing/duplicate feature names or changed column order are errors. NaN denotes a missing measurement, never zero. No gamma columns enter the main model. The dictionary is non-identifying and generated from feature names, not participant data.
+
+All TOML paths resolve relative to the file itself. Keep real paths in `*.local.toml`, not in public examples. `paths.workspace` contains private runtime outputs; `paths.frozen_bundle` optionally points to an existing private frozen model. For a new analysis with changed training inputs/config/code/dependencies, choose a new workspace/frozen output. The release does not import or restore legacy projects.
+
+## Feature definitions
+
+Sixteen electrodes in fixed order: FP1, FP2, F3, F4, C3, C4, P3, P4, O1, O2, F7, F8, T7, T8, P7, P8. Aliases T3/T4/T5/T6 map to T7/T8/P7/P8; collisions are rejected. Bands: delta 1–4, theta 4–8, alpha 8–13, beta 13–30 Hz; broad 1–45 Hz for temporal complexity. Read the exact formulas and units in the schema.
+
+The 752 columns contain 192 spectral features (64 log absolute power, 64 log relative power, 64 within-band normalized spectral entropy), 480 signed debiased squared wPLI connections (120 undirected pairs × four bands), and 80 temporal Hjorth complexities (16 electrodes × five ranges). Spectral entropy is a node spectral feature, not Hjorth complexity. wPLI is the debiased **squared** estimate and can be negative; do not silently replace it with absolute wPLI.
+
+EEG inputs retain their stored EEGLAB microvolt scale. One-sided Hann PSD normalization is `fs*sum(window**2)`, with one-sided factors and band-edge interpolation. Logs are averaged across windows. Connectivity uses cross-window spectral estimates; the implementation retains its original frequency/window aggregation. Boundary durations refer to historical deletion, not samples to delete again. Nonoverlapping one-second windows stay inside epochs and continuous intervals; incomplete tails are discarded. Minimum effective duration is 60 seconds; sampling rate is 500 Hz. There is no new artifact rejection, REST or ICA stage in this release.
+
+## EEG extraction and EEG QC
+
+For metadata containing `set_path`, run:
+
+```powershell
+.\.venv\Scripts\cpca-ad-nc.exe features --cohort development --config configs\config.local.toml
+.\.venv\Scripts\cpca-ad-nc.exe features --cohort external --config configs\config.local.toml
+```
+
+Set the corresponding `development_features = ''` or `external_features = ''` before later stages. This selects `workspace/private/<cohort>/extracted_features.csv` and its matching QC metadata. Otherwise the explicit supplied feature file takes precedence. QC failures remain in generated tables with reasons. External inference requires the prespecified eligible inputs rather than silently selecting a favorable subset. A stale REST field requires `confirmed_rest_reference=true` plus recorded `reference_evidence`; this is evidence recording, not a re-reference operation. Signal units must be explicitly confirmed via `unit_token='EEGLAB_microvolt'`.
+
+### EEGLAB and MATLAB
+
+The retained numerical feature extractor is Python, audited against EEGLAB array loading. The final project contains no standalone validated MATLAB feature extractor; none is fabricated here. `matlab/verify_eeglab_reader.m` is preserved without changes and invokes EEGLAB `pop_loadset`, exporting float32 arrays plus dimensions/channel labels. It performs no EEG preprocessing. Supported Python input is the actual audited v7.3 `.set` + same-stem `.fdt` layout, not arbitrary `.set` encodings.
+
+Install EEGLAB separately from [its official site](https://eeglab.org/). If a new dataset needs REST, install the appropriate REST implementation separately and document its version/preprocessing outside this pipeline; the original local REST version was not preserved. A MATLAB reader comparison job is a JSON array of objects with `set_path`, `binary_path`, `metadata_path`. Add EEGLAB and this repository's `matlab` folder to the MATLAB path, then call `verify_eeglab_reader(jobfile)`. Both outputs are private. Compare channel order, all dimensions and actual values after MATLAB column-major reconstruction; file length alone is insufficient. This release reused the final project's four successful real read comparisons, and did not rerun all EEG during packaging.
+
+## Stages, matching and nested validation
+
+`prepare` imports the tables, records eligibility, makes the same-sex optimal one-to-one NC/AD assignment within **±3 years**, and saves splits. It uses the preserved Hungarian cost rule: unmatched penalty 1000; invalid age pairs 1e6; maximize feasible pairs then minimize age difference. Subject input order resolves ties. To reproduce the paper, supply its private `matched_pairs` and `outer_splits` paths rather than regenerating identities.
+
+Matched table requires `pair_id,a_subject_id,b_subject_id`; IDs occur once and each pair has opposite diagnoses, same sex and age gap ≤3. Split CSV requires `queue,repeat,fold,train_subject_ids,test_subject_ids`; lists are JSON arrays in actual sample order. Queue names are `full` and `matched_3y_NC_AD`. Every repetition must cover its queue exactly once as held-out test cases. Pairs never cross training/test or inner training/validation. For new input, outer stratified splits use `random_seed+repeat`, with the matched pair-level strata and order retained from the original method. Supplied splits are validated and never silently replaced.
+
+`internal` fits every preprocessing/decomposition/classifier step inside each inner training set, chooses complete branch configurations, then fits the whole outer training fold. There is a single common eligible cohort per queue for all seven branches. Default outer 5-fold ×5 repeats; inner 3-fold. Grid: alpha **0,0.1,0.3,1,3,10,30,100**; dimension **1,2,3,5,10,20** subject to rank; LR C **0.01,0.1,1,10**. Seed **20261018**. No MMSE is used in selection. The demo explicitly uses a smaller grid for software checks only.
+
+Preprocessing: training-only imputation, variance filtering, optional robust clipping (off in study), NC-only intercept+age+sex residualization, centering/standardization and block weighting. NC training requires at least eight complete, full-rank observations. Missing age/sex errors rather than returning uncorrected values. Age extrapolation is distinct from successful correction. Demographic inputs use training-only scaling. Complete EEG, PCA and cPCA each use their own fitted classifier. LR: class_weight='balanced', max_iter=2000, positive class AD. cPCA decomposes `Cov(AD)-alpha*Cov(NC)`; retained signs follow training loadings, never MMSE/test labels. Alpha=0 is AD-target covariance PCA, and is not automatically identical to pooled ordinary PCA.
+
+`freeze` reruns the same inner selection on all development data, saves the immutable seven-branch bundle, writes the protocol before external testing, and validates reload. NPZ loading uses `allow_pickle=False`; bundle file hashes are checked. A private freeze is not regenerated from external data.
+
+`predict` requires only a frozen bundle, external age/sex and fixed-schema features. `external` adds evaluation with both diagnoses: ROC-AUC, average precision, sensitivity, specificity, balanced accuracy, accuracy, F1, Brier, fixed threshold 0.5; **2000** stratified subject bootstrap draws, seed **20261020**, shared across models for paired AUC differences. Predeclared NC-training age support sensitivity does not refit. External row/label permutations must leave identity-aligned predictions invariant, and frozen file hashes must remain unchanged. This is independent testing, not nested-CV model selection on external labels.
+
+## Interpretation and optional cognition
+
+`interpret` verifies outer identities and saved OOF baselines before explaining. It computes actual model branch backprojections, EEG-only training Haufe patterns, complete cPCA component loadings and grouped test permutations. For `Z=((R-center)/scale)*block_weights`, weights on residual original units are `(block_weights/scale)*(V@beta)`. Demographic coefficients remain separate. Intercepts and any PCA centering are included and checked against the model logit. Robust clipping, if enabled, makes the relationship to unclipped inputs piecewise linear.
+
+Haufe `Cov(R,g_EEG)/Var(g_EEG)` uses the actual training set only; standardized/common reference coordinates are explicitly saved. Common reference residual SD comes from the frozen development fit, for descriptive across-fit comparison; it never affects outer predictions. Removed features are zero-filled and flagged. Test permutation acts on residual features before fixed scaling/weights/projection, with 50 row permutations per group per outer fold, seed `20261020+100*repeat+fold`; all columns of a group use the same permutation. Across folds, combine held-out predictions within each repeat before computing OOF AUC; never substitute average fold AUC. External frozen permutations use 100, seed 20261020. Negative AUC drops remain. Spread across permutations/repeats is not a subject-level confidence interval or significance test.
+
+Electrode ROI dictionary: left frontal FP1/F3/F7; right frontal FP2/F4/F8; left/right temporal T7/T8 (single-electrode regions); central C3/C4; parietal/posterior P3/P4/P7/P8; occipital O1/O2. Edges are undirected. Summaries retain signed means and mean absolute strength, normalized by feature/edge counts. Rank/top-20 display frequency is descriptive, not statistical significance. Complete tables are saved; no cortical-network labels or source localization are claimed. `report` generates actual run tables and limits in Markdown; bespoke paper plots are not automatically reproduced.
+
+`cognition` is optional (`analysis.mmse=true` also runs it after interpretation). Use observed original MMSE only; no filling or conversion. Frozen AD-target components are selected without MMSE. Report pooled AD+NC and AD-only Spearman separately, partial Spearman with age/sex (pooled also diagnosis), and HC3 MMSE regression. Development education is an observed-case sensitivity; unavailable education is not imputed. All retained component/score tests enter the planned BH FDR family within dataset × statistic, including adjustment/scope variants. NC constant MMSE and insufficient observations are NA. Associations selected after observing feature importance are exploratory, not independent confirmation.
+
+`stability` uses 200 diagnosis-stratified bootstrap refits and leave-one-subject-out refits with fixed selected alpha/dimension. Standardization and block weights are mapped to common feature coordinates and `scipy.linalg.subspace_angles` is used. This is stability **conditional on the selected configuration**, not selection uncertainty. It may take substantially longer than the quick demo.
+
+## Runtime outputs and verification boundary
+
+All generated files are private. Key outputs under `workspace/private/`: eligibility/features and inner/outer splits in `development/`; fold identities, selected parameters, NPZ and JSON transforms in `fold_models/`; immutable `frozen/`; OOF predictions/metrics/reload audits and external metrics in `results/`; training weights/Haufe, permutation results, complete ROI summaries, optional cognition/stability in `interpretability/`. `results/run_report.md` summarizes the run. Cache fingerprints are separate for feature-engine/source files and models/data/splits/config/dependencies. Interpretation currently recomputes and writes its own input/code fingerprints; it does not reuse an unverified explanation cache.
+
+Actually run during packaging: editable installation in a separate environment using the tested installed dependency versions, CLI help/import, eight tests, pure-random 752-column demo, full six-stage synthetic workflow with full and matched queues, saved model reload, fixed-input inference against 350 original fold branches plus seven real external branches. Maximum private probability error was approximately 1.11e-16, AUC difference 0. No paper model tuning or whole EEG/CV rerun was needed. The public code's input adapters were exercised on synthetic data; exact real-data reruns still need private tables, frozen bundles/splits and processed EEG. Preprocessing reconstruction is limited by the unavailable historical REST command/version record.
+
+## Data and third-party provenance
+
+ds004504 local provenance pins version **1.0.8**, upstream commit `73b1b04c0a8e45e96c6f0682cc077a7919480fc4`, CC0, [version DOI](https://doi.org/10.18112/openneuro.ds004504.v1.0.8). Original description: [Data 8(6):95](https://doi.org/10.3390/data8060095). These links describe the public dataset, not a download grant for this study's private transformations or models. No participants.tsv or real rows are redistributed.
+
+The numerical implementation refers to [abidlabs/contrastive](https://github.com/abidlabs/contrastive) but does not import it; the retained upstream license is MIT–NSFG with an additional restriction, not unqualified MIT. See the verbatim `contrastive_LICENSE.md` and third-party notices. The project-wide license and copyright holder remain pending; the repository does not assign a new license or fabricate authors/DOI.

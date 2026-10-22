@@ -1,0 +1,23 @@
+{
+  "locked_before_external_evaluation": true,
+  "primary_questions": ["Do pretrained module/region groups show reproducible fixed-model dependence?", "Do fixed cPCA scores separate AD from NC externally?", "Does cPC1 associate with MMSE within AD after age/sex adjustment?"] ,
+  "primary_component": "cPC1",
+  "other_components": "Exploratory; include every retained dimension in the multiple-testing family.",
+  "groups": {
+    "indicator_type": ["absolute_power", "relative_power", "spectral_entropy", "debiased_squared_wpli", "hjorth_complexity"],
+    "bands": ["delta", "theta", "alpha", "beta", "broad"],
+    "node_regions": {
+      "left_frontal": ["FP1", "F3", "F7"],
+      "right_frontal": ["FP2", "F4", "F8"],
+      "left_temporal": ["T7"],
+      "right_temporal": ["T8"],
+      "central": ["C3", "C4"],
+      "parietal_posterior": ["P3", "P4", "P7", "P8"],
+      "occipital": ["O1", "O2"]
+    },
+    "edge_region_pairs": "Undirected ROI pair; edges appear once only. Summaries report both signed mean and mean absolute magnitude divided by edge count."
+  },
+  "permutation": {"location": "Age/sex residual EEG feature layer, after frozen nuisance regression and before frozen center/scale, block weighting, PCA/cPCA and classifier.", "same_row_permutation_for_all_columns_in_group": true, "repeats": 100, "seed": 20261020, "metric": "baseline ROC-AUC minus permuted ROC-AUC", "negative_values_retained": true, "scope": "Fixed external model dependence; not an additive percentage and not an inferential p-value."},
+  "directions": {"group_contribution": "Permutation importance", "classifier_weight": "Frozen linear decision coefficient mapped to EEG feature coordinates", "haufe": "Training-only association pattern with model EEG score", "group_difference": "Separate AD-versus-NC effect; never infer disease direction from model weight or importance."},
+  "clinical": {"mmse_source": "Observed original MMSE only; no imputation or converted MMSE", "education": "Not in ds004504 metadata; not adjusted", "fdr_family": "All retained cPCA component tests across pooled/AD-only scopes and planned adjusted regressions."}
+}
